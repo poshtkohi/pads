@@ -30,7 +30,7 @@ After total downloads complete, please unzip the four parts through an appropria
 
 ![This is an image for Parvicursor development environment](/assets/images/codeblocks.png)
 
-As seen there are two workspaces in Code::Blocks that have all the code examples for this book. The source directory can be found in */ root/devel/book-src* within the Linux image. To use the Parvicursor project, two libraries and two executables must be built before working on Parvicursor examples, including, *ParvicursorLib*, *AsyncSocketLib*, *xDFSServer_exe*, and *xDFSClient_test*. It is necessary to note that before running xThread examples, the *xDFSServer_exe* project mut be run.
+As seen there are two workspaces in Code::Blocks that have all the code examples for this book. The source directory can be found in */ root/devel/book-src* within the Linux image. To use the Parvicursor project, two libraries and two executables must be built before working on Parvicursor examples, including, *ParvicursorLib*, *AsyncSocketLib*, *xDFSServer_exe*, and *xDFSClient_test*. It is necessary to note that before running xThread examples, the *xDFSServer_exe* project must be run beforehand.
 
 ## 2. A Distribution Package for Microsoft Visual Studio on Windows Family of Operating Systems
 
