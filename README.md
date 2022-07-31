@@ -8,7 +8,7 @@ The authors provide a Linux’s VMware image which accompanies the source codes 
 
 In order to take advantage of this environment, please take the following steps carefully.
 
-**A)** Download and install VMware Workstation Player on your operating system of choice via [this link](https://www.vmware.com/uk/products/workstation-player/workstation-player-evaluation.html).
+**A)** Download and install VMware Workstation Player on your operating system of choice via [this link]( https://www.vmware.com/uk/products/workstation-player.html).
 
 **B)** Download the image files in a ZIP file partitioned into four parts from Google Drive (approximately, 4GB per file for a total of 13.4GB). To be able to download these big chunks, please ensure that you have logged in to your Google account first (if unavailable, create one before proceeding). Then, you can download the parts of the zipped VMware image from the links below:
 
