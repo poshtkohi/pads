@@ -1,4 +1,4 @@
-# Parallel and Distributed Systems (PADS)
+# Implementing Parallel and Distributed Systems (PADS)
 
 This is a home page regarding the source codes for the book **Implementing Parallel and Distributed Systems**.
 
