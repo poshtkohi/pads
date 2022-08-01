@@ -1,6 +1,6 @@
 # Implementing Parallel and Distributed Systems (PADS)
 
-This is a home page regarding the source codes for the book **Implementing Parallel and Distributed Systems**.
+This is a home page regarding the source codes for the book **Implementing Parallel and Distributed Systems** published by CRC-Press.
 
 ## 1. A Linux Image for VMware
 
