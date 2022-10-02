@@ -1,6 +1,0 @@
-export PATH=/usr/bin:/opt/wx/3/bin:$PATH
-export PATH=/usr/lib64:$PATH
-export PATH=/opt/mpich/bin:$PATH
-export PATH=/opt/mpich/lib64:$PATH
-export C_INCLUDE_PATH=/opt/mpich/include
-export CPLUS_INCLUDE_PATH=/opt/mpich/include
