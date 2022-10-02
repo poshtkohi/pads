@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="AsyncEchoServer" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/AsyncEchoServer.exe" prefix_auto="0" extension_auto="0" />
+				<Option object_output="bin/Debug" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-W" />
+					<Add option="-O0 -ll" />
+					<Add option="-D_DEBUG" />
+					<Add option="-D_CONSOLE" />
+				</Compiler>
+			</Target>
+		</Build>
+		<Linker>
+			<Add option="-lpthread" />
+			<Add library="../../AsyncSocketLib/bin/Debug/AsyncSocketLib.lib" />
+			<Add library="../../ParvicursorLib/bin/Debug/ParvicursorLib.lib" />
+		</Linker>
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

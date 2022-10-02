@@ -1,0 +1,166 @@
+#ifndef __Concurrency_FiberExample2_h__
+#define __Concurrency_FiberExample2_h__
+
+
+#include "../../../../Parvicursor/general.h"
+#include "../../../../Parvicursor/System/BasicTypes/BasicTypes.h"
+#include "../../../../Parvicursor/System/Random/Random.h"
+#include "../../../../Parvicursor/System.Threading/Thread/Thread.h"
+#include "../../../../Parvicursor/System.Threading/Mutex/mutex.h"
+#include "../../../../Parvicursor/System.Threading/ConditionVariable/ConditionVariable.h"
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <signal.h>
+#include <tchar.h>
+
+
+using namespace System;
+using namespace System::Threading;
+//**************************************************************************************************************//
+
+void (*SignalHandlerPointer)(int) = null;
+volatile static raised = false;
+static void SignalHandler(int signal)
+{
+	while (true)
+	{
+		printf("signal: %d\n", signal);
+		Thread::Sleep(1000);
+	}
+}
+
+namespace Concurrency
+{
+	//----------------------------------------------------
+	// The FiberExample2 class.
+	// The following code implements a producer/consumer queue.
+	// The queue is represented as a bounded circular buffer, 
+	// and is protected by a mutex-> The code uses two condition variables: 
+	// one used by producers (bufferNotFull) and one used by consumers (bufferNotEmpty).
+	class FiberExample2 : public Object
+    {
+		/*---------------------fields----------------*/
+		private: bool disposed;
+		private: Thread *producer_thread;
+		private: Thread *consumer_thread;
+		private: Int32 count;
+		private: Mutex *mutex;
+		private: ConditionVariable *bufferNotEmpty, *bufferNotFull;
+		private: char circular_buffer[BUFFER_SIZE]; // A buffer with BUFFER_SIZE slots.
+		private: Int32 start, end; // Integers to index circular_buffer.
+		/*---------------------methods----------------*/
+		// FiberExample2 Class constructor.
+		public: FiberExample2()
+		{
+			start = end = 0;
+			mutex = new Mutex();
+			bufferNotEmpty = new ConditionVariable(mutex);
+			bufferNotFull = new ConditionVariable(mutex);
+			disposed = false;
+		}
+		/*-------------------------------------------*/
+		public: ~FiberExample2()
+		{
+			if(!disposed)
+			{
+				if(producer_thread != null)
+					delete producer_thread;
+				if(consumer_thread != null) 
+					delete consumer_thread;
+				if(mutex != null)
+					delete mutex;
+				if(bufferNotEmpty != null)
+					delete bufferNotEmpty;
+				if(bufferNotFull != null)
+					delete bufferNotFull;
+
+				disposed = true;
+			}
+		}
+		/*--------------------------------------------*/
+		public: void Run()
+		{
+			producer_thread = new Thread(FiberExample2::Wrapper_To_Call_producer, (void *)this);
+			consumer_thread = new Thread(FiberExample2::Wrapper_To_Call_consumer, (void *)this);
+
+			producer_thread->Start();
+			consumer_thread->Start();
+
+			producer_thread->SetDetached();
+			consumer_thread->SetDetached();
+		}
+		/*-------------------------------------------*/
+		private: void *producer(void *ptr)
+		{
+			while(true)
+			{
+				printf("I'm producer\n");
+				if(!raised)
+				{
+					raised = true;
+					raise(SIGABRT);
+				}
+				Thread::Sleep(2000); // Simulates some work.
+			}
+			return ptr;
+		}
+		/*-------------------------------------------*/
+		private: void *consumer(void *ptr)
+		{
+			while(true)
+			{
+				printf("I'm consumer\n");
+				Thread::Sleep(2000);
+			}
+			return ptr;
+		}
+		/*-------------------------------------------*/
+		private: static void *Wrapper_To_Call_producer(void *pt2Object)
+		{
+			// explicitly cast to a pointer to FiberExample2
+			FiberExample2 *mySelf = (FiberExample2 *)pt2Object;
+
+			// call member
+			mySelf->producer(pt2Object);
+
+			return pt2Object;
+		}
+		/*-------------------------------------------*/
+		private: static void *Wrapper_To_Call_consumer(void *pt2Object)
+		{
+			// explicitly cast to a pointer to FiberExample2
+			FiberExample2 *mySelf = (FiberExample2 *)pt2Object;
+
+			// call member
+			mySelf->consumer(pt2Object);
+
+			return pt2Object;
+		}
+		/*-------------------------------------------*/
+		public: static int Parvicursor_main(int argc, char *argv[])
+		{
+
+			FiberExample2 *cfc = new FiberExample2();
+			cfc->Run();
+
+			SignalHandlerPointer = SignalHandler;
+			signal(SIGABRT, SignalHandlerPointer);
+
+			while(true)
+			{
+				Thread::Sleep(1000000);
+				//raise(SIGABRT);
+			}
+			delete cfc;
+
+			return 0;
+		}
+		/*-------------------------------------------*/
+
+	};
+	//----------------------------------------------------
+};
+//**************************************************************************************************************//
+
+#endif

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Concurrency" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Concurrency.exe" prefix_auto="0" extension_auto="0" />
+				<Option object_output="bin/Debug" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-W" />
+					<Add option="-O0" />
+					<Add option="-D_DEBUG" />
+					<Add option="-D_CONSOLE" />
+				</Compiler>
+				<Linker>
+					<Add option="-lpthread -lncurses" />
+					<Add library="../../ParvicursorLib/bin/Debug/ParvicursorLib.lib" />
+					<Add directory="../../Parvicursor/System.Threading/Thread/" />
+					<Add directory="../../ParvicursorLib/bin/Debug/" />
+				</Linker>
+			</Target>
+		</Build>
+		<Linker>
+			<Add option="-lpthread" />
+			<Add library="../../ParvicursorLib/bin/Debug/ParvicursorLib.lib" />
+		</Linker>
+		<Unit filename="Concurrency/ConcurrentCircularBuffer/ConcurrentCircularBuffer.h" />
+		<Unit filename="Concurrency/ConcurrentCounterTest/ConcurrentCounterTest.h" />
+		<Unit filename="Concurrency/Fiber/FiberExample1.h" />
+		<Unit filename="Concurrency/Fiber/FiberExample2.h" />
+		<Unit filename="Concurrency/ThreadPool/ThreadPoolExample1.h" />
+		<Unit filename="Concurrency/ThreadPool/ThreadPoolExample2.h" />
+		<Unit filename="Concurrency/ThreadPool/ThreadPoolExample3.h" />
+		<Unit filename="Concurrency/ThreadPool/ThreadPoolExample4.h" />
+		<Unit filename="Concurrency_main.cpp" />
+		<Unit filename="ReadMe.txt" />
+						<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

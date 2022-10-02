@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1350066180 source:/root/projects/Samples/FiberThread/main.cpp
+	<malloc.h>
+	<ucontext.h>
+	<stdio.h>
+	<stdlib.h>
+	<unistd.h>
+	<memory.h>
+

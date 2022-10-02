@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="ClientSocket" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/ClientSocket.exe" prefix_auto="0" extension_auto="0" />
+				<Option object_output="bin/Debug" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-W" />
+					<Add option="-O0" />
+					<Add option="-D_DEBUG" />
+					<Add option="-D_CONSOLE" />
+				</Compiler>
+				<Linker>
+					<Add library="../../ParvicursorLib/bin/Debug/ParvicursorLib.lib" />
+					<Add directory="../../ParvicursorLib/bin/Debug/" />
+				</Linker>
+			</Target>
+		</Build>
+		<Linker>
+			<Add library="../../ParvicursorLib/bin/Debug/ParvicursorLib.lib" />
+		</Linker>
+		<Unit filename="ClientSocket.cpp" />
+		<Unit filename="ReadMe.txt" />
+						<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

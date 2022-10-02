@@ -1,0 +1,134 @@
+# depslib dependency file v1.0
+1350066180 source:/root/projects/Samples/CloneThread/main.cpp
+	<malloc.h>
+	<sys/types.h>
+	<sys/wait.h>
+	<signal.h>
+	<sched.h>
+	<stdio.h>
+	<stdlib.h>
+	<unistd.h>
+	<unistd.h>
+	<limits.h>
+	<sys/syscall.h>
+	<linux/futex.h>
+
+1343829117 /root/projects/Parvicursor/System.Net.Sockets/Socket/Socket.h
+	"../../general.h"
+	"../../StaticFunctions/StaticFunctions.h"
+	"../../System/Exception/Exception.h"
+	"../../System/String/String.h"
+	"../../System.Collections/ArrayList/ArrayList.h"
+	"../../System/ObjectDisposedException/ObjectDisposedException.h"
+	"../../System/InvalidOperationException/InvalidOperationException.h"
+	"../../System/ArgumentException/ArgumentNullException.h"
+	"../SocketException/SocketException.h"
+	"../AddressFamily/AddressFamily.h"
+	"../ProtocolType/ProtocolType.h"
+	"../SocketType/SocketType.h"
+	"../SocketFlags/SocketFlags.h"
+	"../SocketShutdown/SocketShutdown.h"
+	"../../System.Net/IPEndPoint/IPEndPoint.h"
+	<stdio.h>
+	<winsock2.h>
+	<errno.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<netdb.h>
+	<unistd.h>
+	<arpa/inet.h>
+
+1342285620 /root/projects/Parvicursor/general.h
+	<atlstr.h>
+	<windows.h>
+	<stdio.h>
+	<iostream>
+	<string>
+
+1342285680 /root/projects/Parvicursor/StaticFunctions/StaticFunctions.h
+	"../general.h"
+	"../System/BasicTypes/BasicTypes.h"
+	"../System/String/String.h"
+	"../System.Net.Sockets/Socket/Socket.h"
+	<sys/types.h>
+
+1344283997 /root/projects/Parvicursor/System/BasicTypes/BasicTypes.h
+	"../../general.h"
+
+1342285680 /root/projects/Parvicursor/System/String/String.h
+	"../Object/Object.h"
+	"../BasicTypes/BasicTypes.h"
+
+1343085440 /root/projects/Parvicursor/System/Object/Object.h
+	"../BasicTypes/BasicTypes.h"
+
+1342285680 /root/projects/Parvicursor/System/Exception/Exception.h
+	"../Object/Object.h"
+	"../String/String.h"
+	"../BasicTypes/BasicTypes.h"
+
+1342285680 /root/projects/Parvicursor/System.Collections/ArrayList/ArrayList.h
+	"../../System/Object/Object.h"
+	"../../System/ArgumentException/ArgumentOutOfRangeException.h"
+
+1342285680 /root/projects/Parvicursor/System/ArgumentException/ArgumentOutOfRangeException.h
+	"../Exception/Exception.h"
+	"../String/String.h"
+
+1342285680 /root/projects/Parvicursor/System/ObjectDisposedException/ObjectDisposedException.h
+	"../Exception/Exception.h"
+	"../String/String.h"
+
+1342285680 /root/projects/Parvicursor/System/InvalidOperationException/InvalidOperationException.h
+	"../Exception/Exception.h"
+	"../String/String.h"
+
+1342285680 /root/projects/Parvicursor/System/ArgumentException/ArgumentNullException.h
+	"../Exception/Exception.h"
+	"../String/String.h"
+
+1343382541 /root/projects/Parvicursor/System.Net.Sockets/SocketException/SocketException.h
+	"../../System/Exception/Exception.h"
+	"../../System/String/String.h"
+	<winsock2.h>
+	<errno.h>
+	<sys/socket.h>
+
+1342285680 /root/projects/Parvicursor/System.Net.Sockets/AddressFamily/AddressFamily.h
+	<winsock2.h>
+	<errno.h>
+	<sys/socket.h>
+	<netinet/in.h>
+
+1342285680 /root/projects/Parvicursor/System.Net.Sockets/ProtocolType/ProtocolType.h
+	<winsock2.h>
+	<errno.h>
+	<sys/socket.h>
+
+1342285680 /root/projects/Parvicursor/System.Net.Sockets/SocketType/SocketType.h
+	<errno.h>
+	<sys/socket.h>
+
+1342285680 /root/projects/Parvicursor/System.Net.Sockets/SocketFlags/SocketFlags.h
+	<mswsock.h>
+	<errno.h>
+	<sys/socket.h>
+
+1342285680 /root/projects/Parvicursor/System.Net.Sockets/SocketShutdown/SocketShutdown.h
+	<errno.h>
+	<sys/socket.h>
+
+1342285680 /root/projects/Parvicursor/System.Net/IPEndPoint/IPEndPoint.h
+	"../../System/ArgumentException/ArgumentOutOfRangeException.h"
+	"../../System.Net.Sockets/AddressFamily/AddressFamily.h"
+	"../IPAddress/IPAddress.h"
+
+1342285680 /root/projects/Parvicursor/System.Net/IPAddress/IPAddress.h
+	"../../System/NotSupportedException/NotSupportedException.h"
+	"../../System.Net.Sockets/AddressFamily/AddressFamily.h"
+
+1342285680 /root/projects/Parvicursor/System/NotSupportedException/NotSupportedException.h
+	"../Exception/Exception.h"
+	"../String/String.h"
+

@@ -1,0 +1,45 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ParvicursorLib", "..\..\ParvicursorLib\ParvicursorLib.vcproj", "{5AA9B888-33DE-4948-A2D0-8BC44A46AFC7}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "xThreadClient_test", "..\..\xThreadClient_test\xThreadClient_test.vcproj", "{3F5FED6A-24D4-484C-A928-89BC623F8F61}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "xThreadSampleDLL", "..\xThreadSampleDLL\xThreadSampleDLL.vcproj", "{17B74909-7E91-46F2-B313-458084C87495}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "xDFSServer_exe", "..\..\xDFSServer_exe\xDFSServer_exe.vcproj", "{476B4425-CE04-4AD1-8BB0-FA458E8EEAE4}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{5AA9B888-33DE-4948-A2D0-8BC44A46AFC7}.Debug.ActiveCfg = Debug|Win32
+		{5AA9B888-33DE-4948-A2D0-8BC44A46AFC7}.Debug.Build.0 = Debug|Win32
+		{5AA9B888-33DE-4948-A2D0-8BC44A46AFC7}.Release.ActiveCfg = Release|Win32
+		{5AA9B888-33DE-4948-A2D0-8BC44A46AFC7}.Release.Build.0 = Release|Win32
+		{3F5FED6A-24D4-484C-A928-89BC623F8F61}.Debug.ActiveCfg = Debug|Win32
+		{3F5FED6A-24D4-484C-A928-89BC623F8F61}.Debug.Build.0 = Debug|Win32
+		{3F5FED6A-24D4-484C-A928-89BC623F8F61}.Release.ActiveCfg = Release|Win32
+		{3F5FED6A-24D4-484C-A928-89BC623F8F61}.Release.Build.0 = Release|Win32
+		{17B74909-7E91-46F2-B313-458084C87495}.Debug.ActiveCfg = Debug|Win32
+		{17B74909-7E91-46F2-B313-458084C87495}.Debug.Build.0 = Debug|Win32
+		{17B74909-7E91-46F2-B313-458084C87495}.Release.ActiveCfg = Release|Win32
+		{17B74909-7E91-46F2-B313-458084C87495}.Release.Build.0 = Release|Win32
+		{476B4425-CE04-4AD1-8BB0-FA458E8EEAE4}.Debug.ActiveCfg = Debug|Win32
+		{476B4425-CE04-4AD1-8BB0-FA458E8EEAE4}.Debug.Build.0 = Debug|Win32
+		{476B4425-CE04-4AD1-8BB0-FA458E8EEAE4}.Release.ActiveCfg = Release|Win32
+		{476B4425-CE04-4AD1-8BB0-FA458E8EEAE4}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,524 @@
+# depslib dependency file v1.0
+1346251500 source:/root/projects/Samples/AsyncResolver/System.Net/Dns/AsyncDns.cpp
+	"stdafx.h"
+	"AsyncDns.h"
+
+1345910880 /root/projects/Samples/AsyncResolver/System.Net/Dns/stdafx.h
+
+1346324586 /root/projects/Samples/AsyncResolver/System.Net/Dns/AsyncDns.h
+	"../../../../Parvicursor/general.h"
+	"../../../../Parvicursor/System/BasicTypes/BasicTypes.h"
+	"../../../../Parvicursor/System/Object/Object.h"
+	"../../../../Parvicursor/System/Convert/Convert.h"
+	"../../../../Parvicursor/System/Exception/Exception.h"
+	"../../../../Parvicursor/System/ArgumentException/ArgumentNullException.h"
+	"../../../../Parvicursor/System/Environment/Environment.h"
+	"../../../../Parvicursor/System/Async/Async.h"
+	"../../../../Parvicursor/System/String/String.h"
+	"../../../../Parvicursor/System.Net/Dns/Dns.h"
+	"../../../../Parvicursor/System.Net/IPHostEntry/IPHostEntry.h"
+	"../../../../Parvicursor/System.Threading/ThreadPool/ThreadPool.h"
+
+1345910760 /root/projects/Parvicursor/general.h
+	<atlstr.h>
+	<windows.h>
+	<stdio.h>
+	<iostream>
+	<string>
+
+1345910880 /root/projects/Parvicursor/System/BasicTypes/BasicTypes.h
+	"../../general.h"
+
+1345910880 /root/projects/Parvicursor/System/Object/Object.h
+	"../BasicTypes/BasicTypes.h"
+
+1345910880 /root/projects/Parvicursor/System/Convert/Convert.h
+	"../String/String.h"
+	"../ArgumentException/ArgumentNullException.h"
+	"../FormatException/FormatException.h"
+	"../OverflowException/OverflowException.h"
+	"../BasicTypes/BasicTypes.h"
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<string>
+	<sstream>
+
+1345910880 /root/projects/Parvicursor/System/String/String.h
+	"../Object/Object.h"
+	"../BasicTypes/BasicTypes.h"
+
+1345910880 /root/projects/Parvicursor/System/ArgumentException/ArgumentNullException.h
+	"../Exception/Exception.h"
+	"../String/String.h"
+
+1345910880 /root/projects/Parvicursor/System/Exception/Exception.h
+	"../Object/Object.h"
+	"../String/String.h"
+	"../BasicTypes/BasicTypes.h"
+
+1345910880 /root/projects/Parvicursor/System/FormatException/FormatException.h
+	"../Exception/Exception.h"
+	"../String/String.h"
+
+1345910880 /root/projects/Parvicursor/System/OverflowException/OverflowException.h
+	"../Exception/Exception.h"
+	"../String/String.h"
+
+1345910880 /root/projects/Parvicursor/System/Environment/Environment.h
+	"../String/String.h"
+	"../BasicTypes/BasicTypes.h"
+	<windows.h>
+	<sys/param.h>
+	<sys/sysctl.h>
+	<unistd.h>
+
+1346148540 /root/projects/Parvicursor/System/Async/Async.h
+	"../Object/Object.h"
+	"../BasicTypes/BasicTypes.h"
+
+1346150460 /root/projects/Parvicursor/System.Net/Dns/Dns.h
+	"../../System/String/String.h"
+	"../../System/ArgumentException/ArgumentNullException.h"
+	"../../System.Net.Sockets/SocketException/SocketException.h"
+	"../IPHostEntry/IPHostEntry.h"
+	"../../StaticFunctions/StaticFunctions.h"
+	<errno.h>
+	<sys/socket.h>
+	<netdb.h>
+	<stdio.h>
+
+1345910880 /root/projects/Parvicursor/System.Net.Sockets/SocketException/SocketException.h
+	"../../System/Exception/Exception.h"
+	"../../System/String/String.h"
+	<winsock2.h>
+	<errno.h>
+	<sys/socket.h>
+
+1345910880 /root/projects/Parvicursor/System.Net/IPHostEntry/IPHostEntry.h
+	"../../System/String/String.h"
+	"../../System/ArgumentException/ArgumentOutOfRangeException.h"
+	"../IPAddress/IPAddress.h"
+	<errno.h>
+	<sys/socket.h>
+	<netdb.h>
+
+1345910880 /root/projects/Parvicursor/System/ArgumentException/ArgumentOutOfRangeException.h
+	"../Exception/Exception.h"
+	"../String/String.h"
+
+1345910880 /root/projects/Parvicursor/System.Net/IPAddress/IPAddress.h
+	"../../System/NotSupportedException/NotSupportedException.h"
+	"../../System.Net.Sockets/AddressFamily/AddressFamily.h"
+
+1345910880 /root/projects/Parvicursor/System/NotSupportedException/NotSupportedException.h
+	"../Exception/Exception.h"
+	"../String/String.h"
+
+1345910880 /root/projects/Parvicursor/System.Net.Sockets/AddressFamily/AddressFamily.h
+	<winsock2.h>
+	<errno.h>
+	<sys/socket.h>
+	<netinet/in.h>
+
+1345910820 /root/projects/Parvicursor/StaticFunctions/StaticFunctions.h
+	"../general.h"
+	"../System/BasicTypes/BasicTypes.h"
+	"../System/String/String.h"
+	"../System.Net.Sockets/Socket/Socket.h"
+	<sys/types.h>
+
+1345910880 /root/projects/Parvicursor/System.Net.Sockets/Socket/Socket.h
+	"../../general.h"
+	"../../StaticFunctions/StaticFunctions.h"
+	"../../System/Exception/Exception.h"
+	"../../System/String/String.h"
+	"../../System.Collections/ArrayList/ArrayList.h"
+	"../../System/ObjectDisposedException/ObjectDisposedException.h"
+	"../../System/InvalidOperationException/InvalidOperationException.h"
+	"../../System/ArgumentException/ArgumentNullException.h"
+	"../SocketException/SocketException.h"
+	"../AddressFamily/AddressFamily.h"
+	"../ProtocolType/ProtocolType.h"
+	"../SocketType/SocketType.h"
+	"../SocketFlags/SocketFlags.h"
+	"../SocketShutdown/SocketShutdown.h"
+	"../../System.Net/IPEndPoint/IPEndPoint.h"
+	<stdio.h>
+	<winsock2.h>
+	<errno.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<netdb.h>
+	<unistd.h>
+	<arpa/inet.h>
+
+1345910880 /root/projects/Parvicursor/System.Collections/ArrayList/ArrayList.h
+	"../../System/Object/Object.h"
+	"../../System/ArgumentException/ArgumentOutOfRangeException.h"
+
+1345910880 /root/projects/Parvicursor/System/ObjectDisposedException/ObjectDisposedException.h
+	"../Exception/Exception.h"
+	"../String/String.h"
+
+1345910880 /root/projects/Parvicursor/System/InvalidOperationException/InvalidOperationException.h
+	"../Exception/Exception.h"
+	"../String/String.h"
+
+1345910880 /root/projects/Parvicursor/System.Net.Sockets/ProtocolType/ProtocolType.h
+	<winsock2.h>
+	<errno.h>
+	<sys/socket.h>
+
+1345910880 /root/projects/Parvicursor/System.Net.Sockets/SocketType/SocketType.h
+	<errno.h>
+	<sys/socket.h>
+
+1345910880 /root/projects/Parvicursor/System.Net.Sockets/SocketFlags/SocketFlags.h
+	<mswsock.h>
+	<errno.h>
+	<sys/socket.h>
+
+1345910880 /root/projects/Parvicursor/System.Net.Sockets/SocketShutdown/SocketShutdown.h
+	<errno.h>
+	<sys/socket.h>
+
+1345910880 /root/projects/Parvicursor/System.Net/IPEndPoint/IPEndPoint.h
+	"../../System/ArgumentException/ArgumentOutOfRangeException.h"
+	"../../System.Net.Sockets/AddressFamily/AddressFamily.h"
+	"../IPAddress/IPAddress.h"
+
+1345910880 /root/projects/Parvicursor/System.Threading/ThreadPool/ThreadPool.h
+	"../../general.h"
+	"../../System/BasicTypes/BasicTypes.h"
+	"../../System/Object/Object.h"
+	"../../System.Collections/Queue/Queue.h"
+	"../../System/ObjectDisposedException/ObjectDisposedException.h"
+	"../../System.Threading/Thread/Thread.h"
+	"../../System.Threading/Mutex/Mutex.h"
+	"../../System.Threading/ConditionVariable/ConditionVariable.h"
+
+1345910880 /root/projects/Parvicursor/System.Collections/Queue/Queue.h
+	"../../System/Object/Object.h"
+	"../../System/ArgumentException/ArgumentOutOfRangeException.h"
+	"../../System/InvalidOperationException/InvalidOperationException.h"
+	"../../Parvicursor/Collections/SinglyLinkedList.h"
+
+1345910880 /root/projects/Parvicursor/Parvicursor/Collections/SinglyLinkedList.h
+	"../../general.h"
+	"../../System/BasicTypes/BasicTypes.h"
+	"../../System/Object/Object.h"
+	"../../System/ObjectDisposedException/ObjectDisposedException.h"
+
+1345910880 /root/projects/Parvicursor/System.Threading/Thread/Thread.h
+	"../../general.h"
+	"../../StaticFunctions/StaticFunctions.h"
+	"../../System/Object/Object.h"
+	"../../System/Exception/Exception.h"
+	"../../System/String/String.h"
+	"pthread.h"
+	<unistd.h>
+	<pthread.h>
+	<sched.h>
+	<signal.h>
+	<time.h>
+	<sys/time.h>
+	<semaphore.h>
+	<unistd.h>
+	<errno.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	<signal.h>
+	<time.h>
+	<stdio.h>
+	<errno.h>
+
+1345910880 /root/projects/Parvicursor/System.Threading/Thread/pthread.h
+	<windows.h>
+	"config.h"
+	<time.h>
+	<signal.h>
+	<setjmp.h>
+	<limits.h>
+	"need_errno.h"
+	<errno.h>
+	"sched.h"
+	<sys/types.h>
+
+1345910880 /root/projects/Parvicursor/System.Threading/Thread/sched.h
+	"need_errno.h"
+	<errno.h>
+	<sys/types.h>
+	<time.h>
+
+1345910880 /root/projects/Parvicursor/System.Threading/Mutex/Mutex.h
+	"../../general.h"
+	"../../System/Object/Object.h"
+	"../../System/BasicTypes/BasicTypes.h"
+	"../../System/Exception/Exception.h"
+	"../../System/ObjectDisposedException/ObjectDisposedException.h"
+	"../../System.Threading/Thread/Thread.h"
+
+1345910880 /root/projects/Parvicursor/System.Threading/ConditionVariable/ConditionVariable.h
+	"../../general.h"
+	"../../System/Object/Object.h"
+	"../../System/BasicTypes/BasicTypes.h"
+	"../../System/Exception/Exception.h"
+	"../../System/ArgumentException/ArgumentNullException.h"
+	"../../System/ObjectDisposedException/ObjectDisposedException.h"
+	"../../System.Threading/Thread/Thread.h"
+	"../../System.Threading/Mutex/Mutex.h"
+
+1346248740 source:/root/projects/Samples/AsyncResolver/main.cpp
+	"stdafx.h"
+	"../../Parvicursor/general.h"
+	"../../Parvicursor/System/BasicTypes/BasicTypes.h"
+	"../../Parvicursor/System/String/String.h"
+	"../../Parvicursor/System.Threading/Mutex/Mutex.h"
+	"../../Parvicursor/System.Threading/ConditionVariable/ConditionVariable.h"
+	"System.Net/Dns/AsyncDns.h"
+
+1346149380 /root/projects/Samples/AsyncResolver/stdafx.h
+
+1346149200 source:/root/projects/Samples/AsyncResolver/stdafx.cpp
+	"stdafx.h"
+
+1653692770 source:/root/devel/book/Parvicursor/Samples/AsyncResolver/System.Net/Dns/AsyncDns.cpp
+	"AsyncDns.h"
+
+1653691157 /root/devel/book/Parvicursor/Samples/AsyncResolver/System.Net/Dns/AsyncDns.h
+	"../../../../Parvicursor/general.h"
+	"../../../../Parvicursor/System/BasicTypes/BasicTypes.h"
+	"../../../../Parvicursor/System/Object/Object.h"
+	"../../../../Parvicursor/System/Convert/Convert.h"
+	"../../../../Parvicursor/System/Exception/Exception.h"
+	"../../../../Parvicursor/System/ArgumentException/ArgumentNullException.h"
+	"../../../../Parvicursor/System/Environment/Environment.h"
+	"../../../../Parvicursor/System/Async/Async.h"
+	"../../../../Parvicursor/System/String/String.h"
+	"../../../../Parvicursor/System.Net/Dns/Dns.h"
+	"../../../../Parvicursor/System.Net/IPHostEntry/IPHostEntry.h"
+	"../../../../Parvicursor/System.Threading/ThreadPool/ThreadPool.h"
+
+1653693264 /root/devel/book/Parvicursor/Parvicursor/general.h
+	<atlstr.h>
+	<windows.h>
+	<stdio.h>
+	<iostream>
+	<string>
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System/BasicTypes/BasicTypes.h
+	"../../general.h"
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System/Object/Object.h
+	"../BasicTypes/BasicTypes.h"
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System/Convert/Convert.h
+	"../String/String.h"
+	"../ArgumentException/ArgumentNullException.h"
+	"../FormatException/FormatException.h"
+	"../OverflowException/OverflowException.h"
+	"../BasicTypes/BasicTypes.h"
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<string>
+	<sstream>
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System/String/String.h
+	"../Object/Object.h"
+	"../BasicTypes/BasicTypes.h"
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System/ArgumentException/ArgumentNullException.h
+	"../Exception/Exception.h"
+	"../String/String.h"
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System/Exception/Exception.h
+	"../Object/Object.h"
+	"../String/String.h"
+	"../BasicTypes/BasicTypes.h"
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System/FormatException/FormatException.h
+	"../Exception/Exception.h"
+	"../String/String.h"
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System/OverflowException/OverflowException.h
+	"../Exception/Exception.h"
+	"../String/String.h"
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System/Environment/Environment.h
+	"../String/String.h"
+	"../BasicTypes/BasicTypes.h"
+	<windows.h>
+	<sys/param.h>
+	<sys/sysctl.h>
+	<unistd.h>
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System/Async/Async.h
+	"../Object/Object.h"
+	"../BasicTypes/BasicTypes.h"
+
+1653693139 /root/devel/book/Parvicursor/Parvicursor/System.Net/Dns/Dns.h
+	"../../System/String/String.h"
+	"../../System/ArgumentException/ArgumentNullException.h"
+	"../../System.Net.Sockets/SocketException/SocketException.h"
+	"../IPHostEntry/IPHostEntry.h"
+	"../../StaticFunctions/StaticFunctions.h"
+	<ws2tcpip.h>
+	<sys/types.h>
+	<errno.h>
+	<sys/socket.h>
+	<netdb.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<arpa/inet.h>
+	<stdio.h>
+	<string.h>
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System.Net.Sockets/SocketException/SocketException.h
+	"../../System/Exception/Exception.h"
+	"../../System/String/String.h"
+	<winsock2.h>
+	<errno.h>
+	<sys/socket.h>
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System.Net/IPHostEntry/IPHostEntry.h
+	"../../System/String/String.h"
+	"../../System/ArgumentException/ArgumentOutOfRangeException.h"
+	"../IPAddress/IPAddress.h"
+	<ws2tcpip.h>
+	<errno.h>
+	<sys/socket.h>
+	<netdb.h>
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System/ArgumentException/ArgumentOutOfRangeException.h
+	"../Exception/Exception.h"
+	"../String/String.h"
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System.Net/IPAddress/IPAddress.h
+	"../../System/NotSupportedException/NotSupportedException.h"
+	"../../System.Net.Sockets/AddressFamily/AddressFamily.h"
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System/NotSupportedException/NotSupportedException.h
+	"../Exception/Exception.h"
+	"../String/String.h"
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System.Net.Sockets/AddressFamily/AddressFamily.h
+	<winsock2.h>
+	<errno.h>
+	<sys/socket.h>
+	<netinet/in.h>
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/StaticFunctions/StaticFunctions.h
+	"../general.h"
+	"../System/BasicTypes/BasicTypes.h"
+	"../System/String/String.h"
+	<malloc.h>
+	<stdlib.h>
+	<unistd.h>
+	< time.h >
+	<sys/time.h>
+	<sys/types.h>
+
+1653692648 /root/devel/book/Parvicursor/Parvicursor/System.Threading/ThreadPool/ThreadPool.h
+	"../../general.h"
+	"../../System/BasicTypes/BasicTypes.h"
+	"../../System/Object/Object.h"
+	"../../System.Collections/Queue/Queue.h"
+	"../../System/ObjectDisposedException/ObjectDisposedException.h"
+	"../../System.Threading/Thread/Thread.h"
+	"../../System.Threading/Mutex/Mutex.h"
+	"../../System.Threading/ConditionVariable/ConditionVariable.h"
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System.Collections/Queue/Queue.h
+	"../../System/Object/Object.h"
+	"../../System/ArgumentException/ArgumentOutOfRangeException.h"
+	"../../System/InvalidOperationException/InvalidOperationException.h"
+	"../../Parvicursor/Collections/SinglyLinkedList.h"
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System/InvalidOperationException/InvalidOperationException.h
+	"../Exception/Exception.h"
+	"../String/String.h"
+
+1653692644 /root/devel/book/Parvicursor/Parvicursor/Parvicursor/Collections/SinglyLinkedList.h
+	"../../general.h"
+	"../../System/BasicTypes/BasicTypes.h"
+	"../../System/Object/Object.h"
+	"../../System/ObjectDisposedException/ObjectDisposedException.h"
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System/ObjectDisposedException/ObjectDisposedException.h
+	"../Exception/Exception.h"
+	"../String/String.h"
+
+1653693268 /root/devel/book/Parvicursor/Parvicursor/System.Threading/Thread/Thread.h
+	"../../general.h"
+	"../../StaticFunctions/StaticFunctions.h"
+	"../../System/Object/Object.h"
+	"../../System/Exception/Exception.h"
+	"../../System/String/String.h"
+	"pthread.h"
+	<unistd.h>
+	<pthread.h>
+	<sched.h>
+	<signal.h>
+	<time.h>
+	<sys/time.h>
+	<semaphore.h>
+	<unistd.h>
+	<errno.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	<signal.h>
+	<time.h>
+	<stdio.h>
+	<errno.h>
+
+1379073878 /root/devel/book/Parvicursor/Parvicursor/System.Threading/Thread/pthread.h
+	<windows.h>
+	"config.h"
+	<time.h>
+	<signal.h>
+	<setjmp.h>
+	<limits.h>
+	"need_errno.h"
+	<errno.h>
+	"sched.h"
+	<sys/types.h>
+
+1379073880 /root/devel/book/Parvicursor/Parvicursor/System.Threading/Thread/sched.h
+	"need_errno.h"
+	<errno.h>
+	<sys/types.h>
+	<time.h>
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System.Threading/Mutex/Mutex.h
+	"../../general.h"
+	"../../System/Object/Object.h"
+	"../../System/BasicTypes/BasicTypes.h"
+	"../../System/Exception/Exception.h"
+	"../../System/ObjectDisposedException/ObjectDisposedException.h"
+	"../../System.Threading/Thread/Thread.h"
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System.Threading/ConditionVariable/ConditionVariable.h
+	"../../general.h"
+	"../../System/Object/Object.h"
+	"../../System/BasicTypes/BasicTypes.h"
+	"../../System/Exception/Exception.h"
+	"../../System/ArgumentException/ArgumentNullException.h"
+	"../../System/ObjectDisposedException/ObjectDisposedException.h"
+	"../../System.Threading/Thread/Thread.h"
+	"../../System.Threading/Mutex/Mutex.h"
+
+1653693119 source:/root/devel/book/Parvicursor/Samples/AsyncResolver/main.cpp
+	"../../Parvicursor/general.h"
+	"../../Parvicursor/System/BasicTypes/BasicTypes.h"
+	"../../Parvicursor/System/String/String.h"
+	"../../Parvicursor/System.Threading/Mutex/Mutex.h"
+	"../../Parvicursor/System.Threading/ConditionVariable/ConditionVariable.h"
+	"System.Net/Dns/AsyncDns.h"
+

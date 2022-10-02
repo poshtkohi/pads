@@ -1,0 +1,284 @@
+#ifndef __Concurrency_ThreadPoolExample2_h__
+#define __Concurrency_ThreadPoolExample2_h__
+
+#include "../../../../Parvicursor/general.h"
+#include "../../../../Parvicursor/System/BasicTypes/BasicTypes.h"
+#include "../../../../Parvicursor/System/Object/Object.h"
+#include "../../../../Parvicursor/System/Environment/Environment.h"
+#include "../../../../Parvicursor/System/ObjectDisposedException/ObjectDisposedException.h"
+#include "../../../../Parvicursor/System.Threading/Mutex/Mutex.h"
+#include "../../../../Parvicursor/System.Threading/ConditionVariable/ConditionVariable.h"
+#include "../../../../Parvicursor/System.Threading/Barrier/Barrier.h"
+
+#include "ThreadPool.h"
+
+using namespace System;
+using namespace System::Threading;
+using namespace Concurrency;
+
+static ThreadPool *pool2;
+//**************************************************************************************************************//
+
+namespace Concurrency
+{
+	//----------------------------------------------------
+	class ThreadPoolExample2 : public Object
+	{
+		/*---------------------fields----------------*/
+	private: struct FibInfo : public Object
+			 {
+				 Int64 n;
+				 Int64 result;
+				 Barrier *barrier;
+				 ThreadPool *pool;
+			 };
+			 /*---------------------methods----------------*/
+	private: static Int32 Fibonacci_Sequential(Int32 n)
+			 {
+				 if(n==0 || n==1)
+					 return 1;
+				 else
+					 return Fibonacci_Sequential(n-1) + Fibonacci_Sequential(n-2);
+			 }
+			 /*-------------------------------------------*/
+	private: static void Fibonacci_Parallel_(Object *state)
+			 {
+				 FibInfo *info = (FibInfo *)state;
+
+				 if(info->n < 2)
+				 {
+					 info->result = 1;
+					 return;
+				 }
+				 else
+				 {
+					 FibInfo x, y;
+					 x.n = info->n - 1;
+					 y.n = info->n - 2;
+
+					 //poolFib->QueueUserWorkItem(fib, &x); //Fibonacci_Parallel(&x);
+					 //poolFib->QueueUserWorkItem(fib, &y);//Fibonacci_Parallel(&y);
+
+					 Fibonacci_Parallel(&x);
+					 Fibonacci_Parallel(&y);
+
+					 info->result = x.result + y.result;
+					 return;
+				 }
+			 }
+			 /*-------------------------------------------*/
+#define __BarrierVal__ 3
+	private: static void Fibonacci_Parallel(Object *state)
+			 {
+				 FibInfo *info = (FibInfo *)state;
+				 cout << "\nn: " << info->n << endl;//
+				 if(info->n < 2) {
+					 info->result = 1;
+					 return;
+				 }
+				 else {
+					 FibInfo x, y;
+					 x.n = info->n - 1;
+					 y.n = info->n - 2;
+					 //Barrier *childBarrier = new Barrier(__BarrierVal__);
+					 //x.barrier = childBarrier;
+					 x.barrier = info->barrier;
+					 y.barrier = x.barrier;
+					 x.pool = info->pool;
+					 y.pool = info->pool;
+
+					 info->pool->QueueUserWorkItem(Fibonacci_Parallel, &x); //Fibonacci_Parallel(&x);
+					 info->pool->QueueUserWorkItem(Fibonacci_Parallel, &y);//Fibonacci_Parallel(&y);
+
+					 //Fibonacci_Parallel(&x);
+					 //Fibonacci_Parallel(&y);
+
+					 info->barrier->SignalAndWait();
+					 info->result = x.result + y.result;
+					 delete info->barrier;
+					 info->barrier = new Barrier(__BarrierVal__);
+					 info->result = x.result + y.result;
+					 //cout << "info->result: " << info->result << endl;
+					 return;
+				 }
+			 }
+			 /*-------------------------------------------*/
+	public: static int Parvicursor_main1(int argc, char *argv[])
+			{
+				// Intilizes the thread pool instance.
+				ThreadPool pool = ThreadPool(Environment::get_ProcessorCount()*2, 1000);
+
+				Int32 n = 4;
+				FibInfo info;
+				info.n = n;
+				info.result = 0;
+				info.pool = &pool;
+				info.barrier = new Barrier(__BarrierVal__);
+				Fibonacci_Parallel(&info);
+				//cout << "\nparallel result : " << info.result << endl;
+				//cout << "\nsequential result : " << Fibonacci_Sequential(n) << endl;
+
+				info.barrier->SignalAndWait();
+				//Thread::Sleep(10000000);
+
+				return 0;
+			}
+			/*-------------------------------------------*/
+	private: struct FuncInfo : public Object
+			 {
+				 Int32 funcID;
+				 Int32 *counter;
+				 Mutex *mutex;
+				 ConditionVariable *cv;
+				 ThreadPool *pool;
+				 Barrier *barrier;
+			 };
+	private: static void recursive_func1(Object *state)
+			 {
+				 FuncInfo *info = (FuncInfo *)state;
+
+				 printf("I'm thread %d at phase 1\n", info->funcID);
+
+				 info->barrier->SignalAndWait();
+
+				 printf("I'm thread %d at phase 2\n", info->funcID);
+
+				 return;
+			 }
+			 /*-------------------------------------------*/
+#define __FuncNum__ 2
+	public: static int Parvicursor_main3(int argc, char *argv[])
+			{
+				// Intilizes the thread pool instance.
+				ThreadPool pool = ThreadPool(Environment::get_ProcessorCount()*4, 1000);
+
+				FuncInfo funcs[__FuncNum__]; 
+				Barrier *barrier = new Barrier(__FuncNum__);
+				for(Int32 i = 0 ; i < __FuncNum__ ; i++)
+				{
+					funcs[i].funcID = i;
+					funcs[i].barrier = barrier;
+					funcs[i].pool = &pool;
+					pool.QueueUserWorkItem(recursive_func1, &funcs[i]);
+				}
+
+				Thread::Sleep(1000000);
+
+				delete barrier;
+
+				return 0;
+			}
+			/*-------------------------------------------*/
+	private: static void recursive_func(Object *state)
+			 {
+				 // Begin your computaion here
+				 /*--------------------------*/
+				 //BEGIN
+				 FuncInfo *info = (FuncInfo *)state;
+
+				 if(info->mutex != null)
+				 {
+					 /*info->mutex->Lock(); 
+					 (*info->counter)++; // Increment the counter value by its address
+					 if(*info->counter == 2)
+					 info->cv->Signal();// Singnal the main thread of all methods's completion.
+					 info->mutex->Unlock();*/
+					 info->mutex->Lock();
+					 info->cv->Broadcast();
+					 info->mutex->Unlock();
+				 }
+				 if(info->funcID > 10000000)
+				 {
+					 exit(0);
+					 return;
+				 }
+				 // END
+				 // End your computaion here
+				 /*--------------------------*/
+				 FuncInfo *x = new FuncInfo();
+				 x->funcID = info->funcID + 1;
+				 x->mutex = new Mutex();
+				 x->cv = new ConditionVariable(x->mutex);
+
+				 FuncInfo *y = new FuncInfo();
+				 y->funcID = info->funcID + 2;
+				 y->mutex = new Mutex();
+				 y->cv = new ConditionVariable(y->mutex);
+
+
+				 pool2->QueueUserWorkItem(recursive_func, x);
+				 pool2->QueueUserWorkItem(recursive_func, y);
+
+				 printf("funcID: %d\n", info->funcID);//
+
+				 // Waits on counter untill all methods complete.
+				 /*mutex->Lock();
+				 cv->Wait();
+				 mutex->Unlock();*/
+
+				 x->mutex->Lock();
+				 x->cv->Wait();
+				 x->mutex->Unlock();
+
+				 y->mutex->Lock();
+				 y->cv->Wait();
+				 y->mutex->Unlock();
+
+				 cout << "hello1" << endl;
+				 /*delete x->mutex;
+				 delete x->cv;
+				 delete y->mutex;
+				 delete y->cv;
+				 delete x;
+				 delete y;*/
+
+				 //y->mutex->Unlock();
+				 /*if(info != null)
+				 {
+					 if(info->mutex != null)
+					 {
+						 delete info->mutex;
+						 info->mutex = null;
+					 }
+					 if(info->counter != null)
+					 {
+						 delete info->counter;
+						 info->counter = null;
+					 }
+					 if(info->cv != null)
+					 {
+						 delete info->cv;
+						 info->cv = null;
+					 }
+					 delete info;
+					 info = null;
+				 }*/
+			 }
+			public: static int Parvicursor_main(int argc, char *argv[])
+			{
+				pool2 = new ThreadPool(Environment::get_ProcessorCount()* (2 + 1), 10000000);
+
+				FuncInfo *y = new FuncInfo();
+				y->funcID = 0;
+				y->mutex = null;
+				y->cv = null;
+				recursive_func(y);
+				//y.pool = pool;
+				//y->barrier = new Barrier(2);
+				//pool2->QueueUserWorkItem(recursive_func, y);
+				//y->barrier->SignalAndWait();
+
+				Thread::Sleep(10000000);
+
+				delete pool2;
+
+				return 0;
+			}
+			/*-------------------------------------------*/
+
+	};
+	//----------------------------------------------------
+};
+//**************************************************************************************************************//
+
+#endif
