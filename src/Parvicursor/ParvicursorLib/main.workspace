@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
-<CodeBlocks_workspace_file>
-	<Workspace title="Workspace">
-		<Project filename="../xSim2Lib/xSim2Lib.cbp" />
-		<Project filename="../Samples/xSim2/ClusteredQueuingNetworkSimulation/ClusteredQueuingNetworkSimulation.cbp" />
-		<Project filename="../Samples/xSim2/PipelineTandemQueueSimulation/PipelineTandemQueueSimulation.cbp" />
-		<Project filename="ParvicursorLib.cbp" />
-	</Workspace>
-</CodeBlocks_workspace_file>
