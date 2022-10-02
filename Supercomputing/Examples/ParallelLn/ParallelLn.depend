@@ -1,0 +1,24 @@
+# depslib dependency file v1.0
+1644963911 source:/root/devel/book/Supercomputing/Examples/ParallelLn/main.cpp
+	<iostream>
+	<vector>
+	<iostream>
+	<fstream>
+	<sstream>
+	<string>
+	<unistd.h>
+	<sys/time.h>
+	<mpi.h>
+	<math.h>
+
+1627281726 /root/devel/book/Supercomputing/Sparse/Sequential/TripletMatrix.h
+	<iostream>
+	<vector>
+	<map>
+
+1637696960 /root/devel/book/Supercomputing/Sparse/Sequential/SparseMatrix.h
+	<string.h>
+	<iostream>
+	<vector>
+	<map>
+

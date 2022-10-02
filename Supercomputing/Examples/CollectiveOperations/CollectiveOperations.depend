@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1647711813 source:/root/devel/book/Supercomputing/Examples/CollectiveOperations/main.cpp
+	<iostream>
+	<vector>
+	<iostream>
+	<fstream>
+	<sstream>
+	<string>
+	<unistd.h>
+	<sys/time.h>
+	<mpi.h>
+	<math.h>
+	"balanced_binary_tree.h"
+
+1647711860 source:/root/devel/book/Supercomputing/Examples/CollectiveOperations/balanced_binary_tree.cpp
+	"balanced_binary_tree.h"
+	<stdexcept>
+	<string>
+	<algorithm>
+
+1647558718 /root/devel/book/Supercomputing/Examples/CollectiveOperations/balanced_binary_tree.h
+	<stdlib.h>
+	<vector>
+	<tuple>
+
