@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="Workspace">
+		<Project filename="Sparse/Sparse.cbp" />
+		<Project filename="Examples/ParallelSparseMatrixMultiplication/ParallelSparseMatrixMultiplication.cbp">
+			<Depends filename="Sparse/Sparse.cbp" />
+		</Project>
+		<Project filename="Examples/ParallelSparseMatrixVectorMultiplication/ParallelSparseMatrixVectorMultiplication.cbp">
+			<Depends filename="Sparse/Sparse.cbp" />
+		</Project>
+		<Project filename="Examples/ParallelLn/ParallelLn.cbp" />
+		<Project filename="Examples/CollectiveOperations/CollectiveOperations.cbp" />
+	</Workspace>
+</CodeBlocks_workspace_file>
