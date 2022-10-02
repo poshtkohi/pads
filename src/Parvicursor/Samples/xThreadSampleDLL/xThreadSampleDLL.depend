@@ -1,0 +1,148 @@
+# depslib dependency file v1.0
+1350066180 source:/root/projects/Samples/xThreadSampleDLL/stdafx.cpp
+	"stdafx.h"
+
+1350066180 /root/projects/Samples/xThreadSampleDLL/stdafx.h
+
+1653692611 source:/root/devel/book/Parvicursor/Samples/xThreadSampleDLL/Sample.cpp
+	"Sample.h"
+
+1653691159 /root/devel/book/Parvicursor/Samples/xThreadSampleDLL/Sample.h
+	"../../Parvicursor/general.h"
+	"../../Parvicursor/System/String/String.h"
+	"../../Parvicursor/System/BasicTypes/BasicTypes.h"
+	"../../Parvicursor/Parvicursor/xThread/xThreadBase.h"
+	"../../Parvicursor/Parvicursor/Serialization/DeSerializer.h"
+	"../../Parvicursor/Parvicursor/Serialization/Serializer.h"
+	"../../Parvicursor/System.Threading/Thread/Thread.h"
+
+1653693264 /root/devel/book/Parvicursor/Parvicursor/general.h
+	<atlstr.h>
+	<windows.h>
+	<stdio.h>
+	<iostream>
+	<string>
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System/String/String.h
+	"../Object/Object.h"
+	"../BasicTypes/BasicTypes.h"
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System/Object/Object.h
+	"../BasicTypes/BasicTypes.h"
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System/BasicTypes/BasicTypes.h
+	"../../general.h"
+
+1653692646 /root/devel/book/Parvicursor/Parvicursor/Parvicursor/xThread/xThreadBase.h
+	"../../System/BasicTypes/BasicTypes.h"
+	"../../Parvicursor/Serialization/Serializer.h"
+	"../../Parvicursor/Serialization/DeSerializer.h"
+	"../../System/Object/Object.h"
+	"../../System/ArgumentException/ArgumentNullException.h"
+
+1653692646 /root/devel/book/Parvicursor/Parvicursor/Parvicursor/Serialization/Serializer.h
+	"../../System/BasicTypes/BasicTypes.h"
+	"../../System/Object/Object.h"
+	"../../System/ArgumentException/ArgumentOutOfRangeException.h"
+	"../../System/ArgumentException/ArgumentNullException.h"
+	"../../System/Convert/Convert.h"
+	<memory.h>
+	<string.h>
+	<stdio.h>
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System/ArgumentException/ArgumentOutOfRangeException.h
+	"../Exception/Exception.h"
+	"../String/String.h"
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System/Exception/Exception.h
+	"../Object/Object.h"
+	"../String/String.h"
+	"../BasicTypes/BasicTypes.h"
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System/ArgumentException/ArgumentNullException.h
+	"../Exception/Exception.h"
+	"../String/String.h"
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System/Convert/Convert.h
+	"../String/String.h"
+	"../ArgumentException/ArgumentNullException.h"
+	"../FormatException/FormatException.h"
+	"../OverflowException/OverflowException.h"
+	"../BasicTypes/BasicTypes.h"
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<string>
+	<sstream>
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System/FormatException/FormatException.h
+	"../Exception/Exception.h"
+	"../String/String.h"
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System/OverflowException/OverflowException.h
+	"../Exception/Exception.h"
+	"../String/String.h"
+
+1653692646 /root/devel/book/Parvicursor/Parvicursor/Parvicursor/Serialization/DeSerializer.h
+	"../../System/BasicTypes/BasicTypes.h"
+	"../../System/Object/Object.h"
+	"../../System/ArgumentException/ArgumentOutOfRangeException.h"
+	"../../System/ArgumentException/ArgumentNullException.h"
+	<memory.h>
+	<string.h>
+	<stdio.h>
+
+1653693268 /root/devel/book/Parvicursor/Parvicursor/System.Threading/Thread/Thread.h
+	"../../general.h"
+	"../../StaticFunctions/StaticFunctions.h"
+	"../../System/Object/Object.h"
+	"../../System/Exception/Exception.h"
+	"../../System/String/String.h"
+	"pthread.h"
+	<unistd.h>
+	<pthread.h>
+	<sched.h>
+	<signal.h>
+	<time.h>
+	<sys/time.h>
+	<semaphore.h>
+	<unistd.h>
+	<errno.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	<signal.h>
+	<time.h>
+	<stdio.h>
+	<errno.h>
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/StaticFunctions/StaticFunctions.h
+	"../general.h"
+	"../System/BasicTypes/BasicTypes.h"
+	"../System/String/String.h"
+	<malloc.h>
+	<stdlib.h>
+	<unistd.h>
+	< time.h >
+	<sys/time.h>
+	<sys/types.h>
+
+1379073878 /root/devel/book/Parvicursor/Parvicursor/System.Threading/Thread/pthread.h
+	<windows.h>
+	"config.h"
+	<time.h>
+	<signal.h>
+	<setjmp.h>
+	<limits.h>
+	"need_errno.h"
+	<errno.h>
+	"sched.h"
+	<sys/types.h>
+
+1379073880 /root/devel/book/Parvicursor/Parvicursor/System.Threading/Thread/sched.h
+	"need_errno.h"
+	<errno.h>
+	<sys/types.h>
+	<time.h>
+

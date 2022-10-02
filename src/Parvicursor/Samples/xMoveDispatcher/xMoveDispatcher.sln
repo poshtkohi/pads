@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "xMoveDispatcher", "xMoveDispatcher.vcproj", "{70B1E1A7-2347-427C-AEF4-F66AE552292D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9F06F2E6-9DBB-48B2-9649-73EAE399B911} = {9F06F2E6-9DBB-48B2-9649-73EAE399B911}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "xMoveDLL", "..\xMoveDLL\xMoveDLL.vcproj", "{9F06F2E6-9DBB-48B2-9649-73EAE399B911}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{70B1E1A7-2347-427C-AEF4-F66AE552292D}.Debug.ActiveCfg = Debug|Win32
+		{70B1E1A7-2347-427C-AEF4-F66AE552292D}.Debug.Build.0 = Debug|Win32
+		{70B1E1A7-2347-427C-AEF4-F66AE552292D}.Release.ActiveCfg = Release|Win32
+		{70B1E1A7-2347-427C-AEF4-F66AE552292D}.Release.Build.0 = Release|Win32
+		{9F06F2E6-9DBB-48B2-9649-73EAE399B911}.Debug.ActiveCfg = Debug|Win32
+		{9F06F2E6-9DBB-48B2-9649-73EAE399B911}.Debug.Build.0 = Debug|Win32
+		{9F06F2E6-9DBB-48B2-9649-73EAE399B911}.Release.ActiveCfg = Release|Win32
+		{9F06F2E6-9DBB-48B2-9649-73EAE399B911}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
