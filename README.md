@@ -2,6 +2,8 @@
 
 This is a home page regarding the source codes for the book **Implementing Parallel and Distributed Systems** published by CRC-Press.
 
+![This is the book cover](/assets/images/book-cover.jpg)
+
 ## 1. A Linux Image for VMware
 
 The authors provide a Linux’s VMware image which accompanies the source codes for all the chapters of the book. Of course, the reader could compile and prepare all the necessary stuff as described in the book by themselves. However, the image includes all the pre-installed tools and libraries, as well as Code::Block IDE, that the readers need to easily build and develop applications for Parvicrursor Platform (Chapters 1 to 10) and MPI-based Supercomputing (Chapter 11). 
