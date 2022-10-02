@@ -1,0 +1,332 @@
+# depslib dependency file v1.0
+1350066300 source:/root/projects/Samples/LockFree/LockFree/LockFreeArrayList/LockFreeArrayList.cpp
+	"stdafx.h"
+	"LockFreeArrayList.h"
+
+1350066300 /root/projects/Samples/LockFree/LockFree/LockFreeArrayList/LockFreeArrayList.h
+	"../../../../Parvicursor/general.h"
+	"../../../../Parvicursor/System/BasicTypes/BasicTypes.h"
+	"../../../../Parvicursor/Atomic/atomic.h"
+	"../../../../Parvicursor/System.Threading/Thread/Thread.h"
+	"../../../../Parvicursor/System/Object/Object.h"
+	"../../../../Parvicursor/System/ArgumentException/ArgumentOutOfRangeException.h"
+	"../../LockFree/LockFreeMemoryPool/LockFreeMemoryPool.h"
+	"../../LockFree/LockFreeCounter/LockFreeCounter.h"
+
+1350066180 /root/projects/Parvicursor/general.h
+	<atlstr.h>
+	<windows.h>
+	<stdio.h>
+	<iostream>
+	<string>
+
+1359119340 /root/projects/Parvicursor/System/BasicTypes/BasicTypes.h
+	"../../general.h"
+
+1354743000 /root/projects/Parvicursor/Atomic/atomic.h
+	"../general.h"
+	"../System/BasicTypes/BasicTypes.h"
+	"stdio.h"
+
+1350066240 /root/projects/Parvicursor/System/String/String.h
+	"../Object/Object.h"
+	"../BasicTypes/BasicTypes.h"
+
+1350066240 /root/projects/Parvicursor/System/Object/Object.h
+	"../BasicTypes/BasicTypes.h"
+
+1350066240 /root/projects/Parvicursor/System.Collections/ArrayList/ArrayList.h
+	"../../System/Object/Object.h"
+	"../../System/ArgumentException/ArgumentOutOfRangeException.h"
+
+1350066240 /root/projects/Parvicursor/System/ArgumentException/ArgumentOutOfRangeException.h
+	"../Exception/Exception.h"
+	"../String/String.h"
+
+1350066240 /root/projects/Parvicursor/System/Exception/Exception.h
+	"../Object/Object.h"
+	"../String/String.h"
+	"../BasicTypes/BasicTypes.h"
+
+1350066240 /root/projects/Parvicursor/System.Threading/Thread/Thread.h
+	"../../general.h"
+	"../../StaticFunctions/StaticFunctions.h"
+	"../../System/Object/Object.h"
+	"../../System/Exception/Exception.h"
+	"../../System/String/String.h"
+	"pthread.h"
+	<unistd.h>
+	<pthread.h>
+	<sched.h>
+	<signal.h>
+	<time.h>
+	<sys/time.h>
+	<semaphore.h>
+	<unistd.h>
+	<errno.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	<signal.h>
+	<time.h>
+	<stdio.h>
+	<errno.h>
+
+1359684420 /root/projects/Parvicursor/StaticFunctions/StaticFunctions.h
+	"../general.h"
+	"../System/BasicTypes/BasicTypes.h"
+	"../System/String/String.h"
+	"../System.Net.Sockets/Socket/Socket.h"
+	<sys/types.h>
+
+1359570540 /root/projects/Parvicursor/System.Net.Sockets/Socket/Socket.h
+	"../../general.h"
+	"../../StaticFunctions/StaticFunctions.h"
+	"../../System/Exception/Exception.h"
+	"../../System/BasicTypes/BasicTypes.h"
+	"../../System/String/String.h"
+	"../../System.Collections/ArrayList/ArrayList.h"
+	"../../System/ObjectDisposedException/ObjectDisposedException.h"
+	"../../System/InvalidOperationException/InvalidOperationException.h"
+	"../../System/ArgumentException/ArgumentNullException.h"
+	"../SocketException/SocketException.h"
+	"../AddressFamily/AddressFamily.h"
+	"../ProtocolType/ProtocolType.h"
+	"../SocketType/SocketType.h"
+	"../SocketFlags/SocketFlags.h"
+	"../SocketShutdown/SocketShutdown.h"
+	"../../System.Net/IPEndPoint/IPEndPoint.h"
+	<stdio.h>
+	<winsock2.h>
+	<ws2tcpip.h>
+	<errno.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<netdb.h>
+	<unistd.h>
+	<arpa/inet.h>
+
+1350066240 /root/projects/Parvicursor/System/ObjectDisposedException/ObjectDisposedException.h
+	"../Exception/Exception.h"
+	"../String/String.h"
+
+1350066240 /root/projects/Parvicursor/System/InvalidOperationException/InvalidOperationException.h
+	"../Exception/Exception.h"
+	"../String/String.h"
+
+1350066240 /root/projects/Parvicursor/System/ArgumentException/ArgumentNullException.h
+	"../Exception/Exception.h"
+	"../String/String.h"
+
+1350066240 /root/projects/Parvicursor/System.Net.Sockets/SocketException/SocketException.h
+	"../../System/Exception/Exception.h"
+	"../../System/String/String.h"
+	<winsock2.h>
+	<errno.h>
+	<sys/socket.h>
+
+1350066240 /root/projects/Parvicursor/System.Net.Sockets/AddressFamily/AddressFamily.h
+	<winsock2.h>
+	<errno.h>
+	<sys/socket.h>
+	<netinet/in.h>
+
+1350066240 /root/projects/Parvicursor/System.Net.Sockets/ProtocolType/ProtocolType.h
+	<winsock2.h>
+	<errno.h>
+	<sys/socket.h>
+
+1350066240 /root/projects/Parvicursor/System.Net.Sockets/SocketType/SocketType.h
+	<errno.h>
+	<sys/socket.h>
+
+1350066240 /root/projects/Parvicursor/System.Net.Sockets/SocketFlags/SocketFlags.h
+	<mswsock.h>
+	<errno.h>
+	<sys/socket.h>
+
+1350066240 /root/projects/Parvicursor/System.Net.Sockets/SocketShutdown/SocketShutdown.h
+	<errno.h>
+	<sys/socket.h>
+
+1350066240 /root/projects/Parvicursor/System.Net/IPEndPoint/IPEndPoint.h
+	"../../System/ArgumentException/ArgumentOutOfRangeException.h"
+	"../../System.Net.Sockets/AddressFamily/AddressFamily.h"
+	"../IPAddress/IPAddress.h"
+
+1350066240 /root/projects/Parvicursor/System.Net/IPAddress/IPAddress.h
+	"../../System/NotSupportedException/NotSupportedException.h"
+	"../../System.Net.Sockets/AddressFamily/AddressFamily.h"
+
+1350066240 /root/projects/Parvicursor/System/NotSupportedException/NotSupportedException.h
+	"../Exception/Exception.h"
+	"../String/String.h"
+
+1350066240 /root/projects/Parvicursor/System.Threading/Thread/pthread.h
+	<windows.h>
+	"config.h"
+	<time.h>
+	<signal.h>
+	<setjmp.h>
+	<limits.h>
+	"need_errno.h"
+	<errno.h>
+	"sched.h"
+	<sys/types.h>
+
+1350066240 /root/projects/Parvicursor/System.Threading/Thread/sched.h
+	"need_errno.h"
+	<errno.h>
+	<sys/types.h>
+	<time.h>
+
+1350066300 source:/root/projects/Samples/LockFree/LockFree/LockFreeMemoryPool/LockFreeMemoryPool.cpp
+	"stdafx.h"
+	"LockFreeMemoryPool.h"
+
+1350066300 /root/projects/Samples/LockFree/LockFree/LockFreeMemoryPool/LockFreeMemoryPool.h
+	"../../../../Parvicursor/general.h"
+	"../../../../Parvicursor/StaticFunctions/StaticFunctions.h"
+	"../../../../Parvicursor/System/BasicTypes/BasicTypes.h"
+	"../../../../Parvicursor/Atomic/atomic.h"
+	"../../../../Parvicursor/System.Threading/Thread/Thread.h"
+	"../LockFreeCounter/LockFreeCounter.h"
+
+1350066300 source:/root/projects/Samples/LockFree/LockFree/LockFreeStack/LockFreeStack.cpp
+	"stdafx.h"
+	"LockFreeStack.h"
+
+1350066300 /root/projects/Samples/LockFree/LockFree/LockFreeStack/LockFreeStack.h
+	"../../../../Parvicursor/general.h"
+	"../../../../Parvicursor/System/BasicTypes/BasicTypes.h"
+	"../../../../Parvicursor/Atomic/atomic.h"
+	"../../../../Parvicursor/System.Threading/Thread/Thread.h"
+	"../LockFreeCounter/LockFreeCounter.h"
+
+1350066180 source:/root/projects/Samples/LockFree/LockFree_main.cpp
+	"stdafx.h"
+	"../../Parvicursor/general.h"
+	"../../Parvicursor/System/BasicTypes/BasicTypes.h"
+	"../../Parvicursor/System.Threading/Thread/Thread.h"
+	"LockFree/LockFreeStack/LockFreeStack.h"
+	"LockFree/LockFreeArrayList/LockFreeArrayList.h"
+	"LockFree/LockFreeMemoryPool/LockFreeMemoryPool.h"
+
+1350066180 /root/projects/Samples/LockFree/stdafx.h
+
+1350066180 source:/root/projects/Samples/LockFree/stdafx.cpp
+	"stdafx.h"
+
+1350066300 /root/projects/Samples/LockFree/LockFree/LockFreeArrayList/stdafx.h
+
+1350066300 /root/projects/Samples/LockFree/LockFree/LockFreeCounter/LockFreeCounter.h
+	"../../../../Parvicursor/general.h"
+	"../../../../Parvicursor/System/Object/Object.h"
+	"../../../../Parvicursor/System/BasicTypes/BasicTypes.h"
+	"../../../../Parvicursor/Atomic/atomic.h"
+
+1350066300 /root/projects/Samples/LockFree/LockFree/LockFreeMemoryPool/stdafx.h
+
+1350066300 /root/projects/Samples/LockFree/LockFree/LockFreeStack/stdafx.h
+
+1653731384 source:/root/devel/book/Parvicursor/Samples/LockFree/LockFree/LockFreeStack/LockFreeStack.cpp
+	"LockFreeStack.h"
+
+1653691159 /root/devel/book/Parvicursor/Samples/LockFree/LockFree/LockFreeStack/LockFreeStack.h
+	"../../../../Parvicursor/general.h"
+	"../../../../Parvicursor/System/BasicTypes/BasicTypes.h"
+	"../../../../Parvicursor/Atomic/atomic.h"
+	"../../../../Parvicursor/System.Threading/Thread/Thread.h"
+	"../LockFreeCounter/LockFreeCounter.h"
+
+1653693264 /root/devel/book/Parvicursor/Parvicursor/general.h
+	<atlstr.h>
+	<windows.h>
+	<stdio.h>
+	<iostream>
+	<string>
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System/BasicTypes/BasicTypes.h
+	"../../general.h"
+
+1653692644 /root/devel/book/Parvicursor/Parvicursor/Atomic/atomic.h
+	"../general.h"
+	"../System/BasicTypes/BasicTypes.h"
+	"stdio.h"
+
+1653693268 /root/devel/book/Parvicursor/Parvicursor/System.Threading/Thread/Thread.h
+	"../../general.h"
+	"../../StaticFunctions/StaticFunctions.h"
+	"../../System/Object/Object.h"
+	"../../System/Exception/Exception.h"
+	"../../System/String/String.h"
+	"pthread.h"
+	<unistd.h>
+	<pthread.h>
+	<sched.h>
+	<signal.h>
+	<time.h>
+	<sys/time.h>
+	<semaphore.h>
+	<unistd.h>
+	<errno.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	<signal.h>
+	<time.h>
+	<stdio.h>
+	<errno.h>
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/StaticFunctions/StaticFunctions.h
+	"../general.h"
+	"../System/BasicTypes/BasicTypes.h"
+	"../System/String/String.h"
+	<malloc.h>
+	<stdlib.h>
+	<unistd.h>
+	< time.h >
+	<sys/time.h>
+	<sys/types.h>
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System/String/String.h
+	"../Object/Object.h"
+	"../BasicTypes/BasicTypes.h"
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System/Object/Object.h
+	"../BasicTypes/BasicTypes.h"
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System/Exception/Exception.h
+	"../Object/Object.h"
+	"../String/String.h"
+	"../BasicTypes/BasicTypes.h"
+
+1379073878 /root/devel/book/Parvicursor/Parvicursor/System.Threading/Thread/pthread.h
+	<windows.h>
+	"config.h"
+	<time.h>
+	<signal.h>
+	<setjmp.h>
+	<limits.h>
+	"need_errno.h"
+	<errno.h>
+	"sched.h"
+	<sys/types.h>
+
+1379073880 /root/devel/book/Parvicursor/Parvicursor/System.Threading/Thread/sched.h
+	"need_errno.h"
+	<errno.h>
+	<sys/types.h>
+	<time.h>
+
+1653691159 /root/devel/book/Parvicursor/Samples/LockFree/LockFree/LockFreeCounter/LockFreeCounter.h
+	"../../../../Parvicursor/general.h"
+	"../../../../Parvicursor/System/Object/Object.h"
+	"../../../../Parvicursor/System/BasicTypes/BasicTypes.h"
+	"../../../../Parvicursor/Atomic/atomic.h"
+	<features.h>
+	<features.h>
+

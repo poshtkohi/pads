@@ -1,0 +1,37 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ParvicursorLib", "..\..\ParvicursorLib\ParvicursorLib.vcproj", "{5AA9B888-33DE-4948-A2D0-8BC44A46AFC7}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "xDFSServer_exe", "..\..\xDFSServer_exe\xDFSServer_exe.vcproj", "{476B4425-CE04-4AD1-8BB0-FA458E8EEAE4}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LockFree", "LockFree.vcproj", "{5C15E638-44A0-4445-9CF4-C6AA0D5C2F2F}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{5AA9B888-33DE-4948-A2D0-8BC44A46AFC7}.Debug.ActiveCfg = Debug|Win32
+		{5AA9B888-33DE-4948-A2D0-8BC44A46AFC7}.Debug.Build.0 = Debug|Win32
+		{5AA9B888-33DE-4948-A2D0-8BC44A46AFC7}.Release.ActiveCfg = Release|Win32
+		{5AA9B888-33DE-4948-A2D0-8BC44A46AFC7}.Release.Build.0 = Release|Win32
+		{476B4425-CE04-4AD1-8BB0-FA458E8EEAE4}.Debug.ActiveCfg = Debug|Win32
+		{476B4425-CE04-4AD1-8BB0-FA458E8EEAE4}.Debug.Build.0 = Debug|Win32
+		{476B4425-CE04-4AD1-8BB0-FA458E8EEAE4}.Release.ActiveCfg = Release|Win32
+		{476B4425-CE04-4AD1-8BB0-FA458E8EEAE4}.Release.Build.0 = Release|Win32
+		{5C15E638-44A0-4445-9CF4-C6AA0D5C2F2F}.Debug.ActiveCfg = Debug|Win32
+		{5C15E638-44A0-4445-9CF4-C6AA0D5C2F2F}.Debug.Build.0 = Debug|Win32
+		{5C15E638-44A0-4445-9CF4-C6AA0D5C2F2F}.Release.ActiveCfg = Release|Win32
+		{5C15E638-44A0-4445-9CF4-C6AA0D5C2F2F}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
