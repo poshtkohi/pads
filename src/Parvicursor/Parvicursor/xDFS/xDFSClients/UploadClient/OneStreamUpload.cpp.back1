@@ -1,0 +1,324 @@
+#define null 0
+#include "stdafx.h"
+
+#include "OneStreamUpload.h"
+//**************************************************************************************************************//
+void GetBytesOfLongNumberForGridFTPMode(char *buffer, Int64 value)
+{
+	/*if(value > 0xFFFFFFFFFFFFFFFF) 
+		throw ArgumentOutOfRangeException("Length of value field is greater than 18446744073709551615.");*/
+
+	buffer[0] = (unsigned char)((value & 0xFF00000000000000) >> 56);
+	buffer[1] = (unsigned char)((value & 0x00FF000000000000) >> 48);
+	buffer[2] = (unsigned char)((value & 0x0000FF0000000000) >> 40);
+	buffer[3] = (unsigned char)((value & 0x000000FF00000000) >> 32);
+	buffer[4] = (unsigned char)((value & 0x00000000FF000000) >> 24);
+	buffer[5] = (unsigned char)((value & 0x0000000000FF0000) >> 16);
+	buffer[6] = (unsigned char)((value & 0x000000000000FF00) >> 8);
+	buffer[7] = (unsigned char) (value & 0x00000000000000FF);
+}
+Int64 GetLongNumberFromBytesForGridFTPMode(unsigned char *buffer)
+{
+	//if(buffer == null) throw new ArgumentNullException("Buffer can not be null.");
+	//if(buffer.Length != 8) throw new ArgumentOutOfRangeException("Buffer length cannot be opposite of 8 bytes.");
+	return ((Int64)buffer[0]  << 56) | ((Int64)buffer[1] << 48) | ((Int64)buffer[2] << 40) | ((Int64)buffer[3] << 32) | ((Int64)buffer[4] << 24) | ((Int64)buffer[5]  << 16) | ((Int64)buffer[6]  << 8) | (Int64)buffer[7];
+}
+//**************************************************************************************************************//
+namespace Parvicursor
+{
+   namespace xDFS
+   {
+	   namespace xDFSClients
+	   {
+ 		//----------------------------------------------------
+		OneStreamUpload::OneStreamUpload(const String &readFilename, const String &remoteFilename, int parallel, int tcpBufferSize, const String &xDFSServerAddress, const NetworkCredential &nc, bool secure/*, ref RijndaelEncryption rijndael*/, bool memmoryToMemoryTests, ArrayList *errors)
+		{
+
+			if(readFilename.get_BaseStream() == null)
+				throw ArgumentNullException("readFilename is a null reference.");
+
+			if(remoteFilename.get_BaseStream() == null)
+				throw ArgumentNullException("remoteFilename is a null reference.");
+
+			if(xDFSServerAddress.get_BaseStream() == null)
+				throw ArgumentNullException("xDFSServerAddress is a null reference.");
+
+			if(&nc == null)
+				throw ArgumentNullException("nc is a null reference.");
+
+			if(parallel <= 0)
+				throw ArgumentOutOfRangeException("parallel parameter can not be negative or zero.");
+
+			if(tcpBufferSize <= 0)
+				throw ArgumentOutOfRangeException("tcpBufferSize parameter can not be negative or zero.");
+
+
+			//this.qread = qread;
+			this->readFilename = readFilename;
+			this->remoteFilename = remoteFilename;
+			this->parallel = parallel;
+			this->tcpBufferSize = tcpBufferSize;
+			this->xDFSServerAddress = xDFSServerAddress;
+			this->nc = (NetworkCredential *)&nc;
+			this->secure = secure;
+			////this->rijndael = rijndael;
+			this->memmoryToMemoryTests = memmoryToMemoryTests;
+			this->errors = errors;
+			this->worker = null;
+			this->closed = false;
+			this->ended = false;
+			this->socket = null;
+			this->seekValue = null;
+			this->readValue = null;
+			this->buffer = null;
+			this->socket = null;
+			this->fs = null;
+
+			this->fs = new FileStream(this->readFilename, Open, Read, 9); // FileShare
+			this->fileSize = this->fs->get_Length();
+			this->guid = Guid::NewGuid(); 
+
+			cout << "fileSize: " << this->fileSize << endl;
+
+			/*sock = new System::Net::Sockets::Socket(InterNetwork, Stream, tcp);
+			//IPEndPoint hostEndPoint = new IPEndPoint(IPAddress.Any, 2799);
+			IPEndPoint hostEndPoint(IPAddress::get_Any(), 2799);
+			//sock.SetSocketOption(SocketOptionLevel.Socket, SocketOptionName.ReuseAddress, 1);
+			sock->Bind(hostEndPoint);
+			sock->Listen(1000);*/
+
+		}
+		//----------------------------------------------------
+		OneStreamUpload::~OneStreamUpload()
+		{
+			if(!this->closed)
+			{
+				Close();
+				//printf("hellow world\n");
+			}
+		}
+		//----------------------------------------------------
+		long OneStreamUpload::get_WrittenSize()
+		{
+			return -1;
+		}
+		//----------------------------------------------------
+		const DateTime &OneStreamUpload::get_StartTime()
+		{
+			return (const DateTime &)DateTime::get_Now();
+		}
+		//----------------------------------------------------
+		const DateTime &OneStreamUpload::get_EndTime()
+		{
+			return (const DateTime &)DateTime::get_Now();
+		}
+		//----------------------------------------------------
+		void OneStreamUpload::WorkerProc()
+		{
+			try
+			{
+				IPHostEntry hostEntry = Dns::Resolve(xDFSServerAddress);
+				IPAddress ip = hostEntry.get_AddressList(0);
+				Socket *sock = new Socket(ip.get_AddressFamily(), Stream, tcp);
+
+
+				if(sock == null)
+					throw ObjectDisposedException("Could not instantiate from Socket class.");
+
+				socket = new ParvicursorSocket(sock);
+
+				//sock.SetSocketOption(SocketOptionLevel.Socket, SocketOptionName.SendBuffer, tcpBufferSize);//
+				/*sock.SetSocketOption(SocketOptionLevel.Socket, SocketOptionName.ReceiveBuffer, tcpBufferSize);//*/
+				IPEndPoint inp(ip, 2799);
+				socket->get_BaseSocket()->Connect(inp);
+
+				Serializer se(512);
+				se.Write(this->guid);
+				se.Write(this->remoteFilename);
+				se.Write<Int64>(this->fileSize);
+				se.Write<Int32>(this->parallel);
+				se.Write<Int32>(this->tcpBufferSize);
+
+				socket->WriteByte((char)SingleFileTransferUploadFromClient);
+				socket->WriteObject(se.get_BaseBuffer(), se.get_BaseBufferSize());
+				socket->CheckExceptionResponse();
+
+
+
+				//ParvicursorSocket socket = new ParvicursorSocket(reader, writer);
+				//t1 = DateTime.Now;
+				this->seekValue = new char[8];
+				this->readValue = new char[8];
+				this->buffer = new char[this->tcpBufferSize];
+				this->offsetSeek = 0;
+				this->n = 0; 
+
+				while(true)
+				{
+					if(closed)
+					{
+						exited = true;
+						return ;
+					}
+					//if(written >= fileSize)
+					//{
+						//t2 = DateTime.Now;
+						//Console.WriteLine(t2);
+						//break;
+					//}
+					//}
+					ReadFromFile();
+					if(offsetSeek == -1)
+					{
+						///t2 = DateTime.Now;
+						//Console.WriteLine(t2);
+						//printf("offsetSeek");
+						//socket->CheckExceptionResponse();
+						break;
+					}
+					socket->WriteByte(1);// signaling the server about arrival of new file block.
+
+					GetBytesOfLongNumberForGridFTPMode(this->seekValue, this->offsetSeek);
+					GetBytesOfLongNumberForGridFTPMode(this->readValue, this->n);
+
+					this->socket->Write(this->seekValue, 0, 8);
+					this->socket->Write(this->readValue, 0, 8);
+					//printf("seekValue: %ld readValue: %ld\n", this->offsetSeek, (long)this->n);
+					std::cout << "seekValue: " << this->offsetSeek << " readValue: " << this->n << std::endl;
+
+					this->socket->Write(this->buffer, 0, (int)this->n);
+					written += n;
+					socket->CheckExceptionResponse();
+					//Thread.Sleep(1);
+
+					if(ended)
+					{
+						//t2 = DateTime.Now;
+						//Console.WriteLine(t2);
+						break;
+					}
+				}
+				if(closed)
+				{
+					exited = true;
+					return ;
+				}
+				////seekValue = readValue = null;
+				socket->WriteByte(0); // signaling the server about finalization of transferring file blocks.
+				//socket->CheckExceptionResponse();
+				//double elapsed = (t2 - t1).TotalMilliseconds;
+				//Console.WriteLine("Seconds: {0} ", elapsed/1000);
+				//Console.WriteLine("Real Average Speed(MBytes/s): {0} MBytes/s", (fileSize/(1024*1024))/(elapsed / 1000)   );
+				//qread.Close();
+				exited = true;
+				WorkerExit();
+			}
+			catch(Exception &e) 
+			{
+				if(this->errors != null)
+					this->errors->Add(new Exception(e.get_Message()));
+
+				WorkerExit();
+				exited = true;
+				return;
+			}
+			catch(...) 
+			{
+				if(this->errors != null)
+						this->errors->Add(new Exception("Unknown exception was occured"));
+
+				WorkerExit();
+				exited = true;
+
+				return;
+			}
+		}
+		//----------------------------------------------------
+		void OneStreamUpload::ReadFromFile()
+		{
+			this->n = this->fs->Read(this->buffer, 0, this->tcpBufferSize);
+			if(n <= 0)
+			{
+				this->offsetSeek = -1;
+				return ;
+			}
+			this->k++;
+			this->offsetSeek = this->fs->get_Position() - this->n;
+		}
+		//----------------------------------------------------
+		void OneStreamUpload::Run()
+		{
+			worker = new Thread(this->Wrapper_To_Call_WorkerProc, (void *)this);
+			worker->Start();
+		}
+		//----------------------------------------------------
+		void OneStreamUpload::WorkerExit()
+		{
+			Close();
+		}
+		//----------------------------------------------------
+		void OneStreamUpload::Close()
+		{
+			if(!this->closed)
+			{
+				this->closed = true;
+				/*while(!exited)
+				{
+					_timeout++;
+					if(_timeout == this.timeout)
+					{
+						try { worker.Abort(); } catch { }
+						break;
+					}
+					Thread.Sleep(1);
+				}*/
+				if(this->socket != null)
+				{
+					if(this->socket->get_BaseSocket()->get_Connected())
+					{
+						this->socket->get_BaseSocket()->Shutdown(Both);
+					}
+					//this->socket->get_BaseSocket()->Shutdown(Both);
+					this->socket->Close();
+					delete this->socket; 
+				}
+				if(worker != null)
+				{
+					worker->Abort();
+					delete worker;
+				}
+
+				if(this->seekValue != null)
+					delete this->seekValue;
+
+				if(this->readValue != null)
+					delete this->readValue;
+
+				if(this->buffer != null)
+					delete this->buffer;
+
+				if(this->fs != null)
+				{
+					fs->Close();
+					delete this->fs;
+				}
+				//delete this->nc;
+
+			}
+		}
+		//----------------------------------------------------
+		void *OneStreamUpload::Wrapper_To_Call_WorkerProc(void* pt2Object)
+		{
+			OneStreamUpload* mySelf = (OneStreamUpload*) pt2Object;
+			// call member
+			mySelf->WorkerProc();
+			return pt2Object;
+		}
+		//----------------------------------------------------
+		//private void PublicKeyAuthentication(Socket sock);
+		//private byte[] AuthenticationHeaderBuilder(string username, string password);
+   		//----------------------------------------------------
+	   };
+   };
+};
+//**************************************************************************************************************//
