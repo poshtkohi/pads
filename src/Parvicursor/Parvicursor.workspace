@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="ParvicursorLib workspace">
+		<Project filename="ParvicursorLib/ParvicursorLib.cbp" />
+		<Project filename="AsyncSocketLib/AsyncSocketLib.cbp" />
+		<Project filename="xDFSServer_exe/xDFSServer_exe.cbp" />
+		<Project filename="xDFSClient_test/xDFSClient_test.cbp" />
+		<Project filename="Samples/AsyncEchoServer/AsyncEchoServer.cbp" />
+		<Project filename="Samples/AsyncResolver/AsyncResolver.cbp" />
+		<Project filename="Samples/ClientSocket/ClientSocket.cbp" />
+		<Project filename="Samples/CloneThread/CloneThread.cbp" />
+		<Project filename="Samples/Concurrency/Concurrency.cbp" />
+		<Project filename="Samples/Cryptography/Cryptography.cbp" />
+		<Project filename="Samples/DiskIO/DiskIO.cbp" />
+		<Project filename="Samples/FiberThread/FiberThread.cbp" />
+		<Project filename="Samples/FileStream/FileStream.cbp" />
+		<Project filename="Samples/FileTransferClient/FileTransferClient.cbp" />
+		<Project filename="Samples/FileTransferServer/FileTransferServer.cbp" />
+		<Project filename="Samples/GraphSample/GraphSample.cbp" />
+		<Project filename="Samples/HttpProxyServer/HttpProxyServer.cbp" />
+		<Project filename="Samples/LockFree/LockFree.cbp" />
+		<Project filename="Samples/RecursiveDirectoryTraversal/RecursiveDirectoryTreeTraversal.cbp" />
+		<Project filename="Samples/Serialization/Serialization.cbp" />
+		<Project filename="Samples/Threading/Threading.cbp" />
+		<Project filename="Samples/Timer/Timer.cbp" />
+		<Project filename="Samples/xDFSFileStreamClient/xDFSFileStreamClient.cbp" />
+		<Project filename="Samples/xThreadPiCalcDLL/xThreadPiCalcDLL.cbp" />
+		<Project filename="Samples/xThreadPiClacDispatcher/xThreadPiClacDispatcher.cbp" />
+		<Project filename="Samples/xThreadSampleDLL/xThreadSampleDLL.cbp" />
+		<Project filename="Samples/xThreadAddNumbersDispatcher/xThreadAddNumbersDispatcher.cbp" />
+		<Project filename="Samples/xThreadThirdPartyTransferDLL/xThreadThirdPartyTransferDLL.cbp" />
+		<Project filename="Samples/xThreadThirdPartyTransferDispatcher/xThreadThirdPartyTransferDispatcher.cbp" />
+	</Workspace>
+</CodeBlocks_workspace_file>

@@ -1,0 +1,828 @@
+# depslib dependency file v1.0
+1653692644 source:/root/devel/book/Parvicursor/Parvicursor/Parvicursor/Collections/SinglyLinkedList.cpp
+	"SinglyLinkedList.h"
+
+1653692644 /root/devel/book/Parvicursor/Parvicursor/Parvicursor/Collections/SinglyLinkedList.h
+	"../../general.h"
+	"../../System/BasicTypes/BasicTypes.h"
+	"../../System/Object/Object.h"
+	"../../System/ObjectDisposedException/ObjectDisposedException.h"
+
+1653693264 /root/devel/book/Parvicursor/Parvicursor/general.h
+	<atlstr.h>
+	<windows.h>
+	<stdio.h>
+	<iostream>
+	<string>
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System/BasicTypes/BasicTypes.h
+	"../../general.h"
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System/Object/Object.h
+	"../BasicTypes/BasicTypes.h"
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System/ObjectDisposedException/ObjectDisposedException.h
+	"../Exception/Exception.h"
+	"../String/String.h"
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System/Exception/Exception.h
+	"../Object/Object.h"
+	"../String/String.h"
+	"../BasicTypes/BasicTypes.h"
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System/String/String.h
+	"../Object/Object.h"
+	"../BasicTypes/BasicTypes.h"
+
+1653693264 source:/root/devel/book/Parvicursor/Parvicursor/Parvicursor/xDFS/xDFSClients/DownloadClient/DownloadClient.cpp
+	"DownloadClient.h"
+
+1653693264 /root/devel/book/Parvicursor/Parvicursor/Parvicursor/xDFS/xDFSClients/DownloadClient/DownloadClient.h
+	"../../../../general.h"
+	"../../../../StaticFunctions/StaticFunctions.h"
+	"../../../../System/BasicTypes/BasicTypes.h"
+	"../../../../System/Object/Object.h"
+	"../../../../System/ArgumentException/ArgumentNullException.h"
+	"../../../../System.Collections/ArrayList/ArrayList.h"
+	"../../../../System.IO/FileStream/FileStream.h"
+	"../../../../System.Net.Sockets/Socket/Socket.h"
+	"../../../../System.Net/Dns/Dns.h"
+	"../../../../System.Net/NetworkCredential/NetworkCredential.h"
+	"../../../../System/Guid/Guid.h"
+	"../../../../Parvicursor/Parvicursor.Net/ParvicursorSocket/ParvicursorSocket.h"
+	"../../../../System.Threading/Thread/Thread.h"
+	"../../../../System.Threading/Mutex/Mutex.h"
+	"../../../../System.Threading/ConditionVariable/ConditionVariable.h"
+	"../../../../System.IO/IOException/IOException.h"
+	"../../../../Parvicursor/Shared/Enums/xDFS/TransferChannelMode.h"
+	"../../../../Parvicursor/Serialization/Serializer.h"
+	"../../../../Parvicursor/Serialization/DeSerializer.h"
+	<fcntl.h>
+	<sys/types.h>
+	<sys/mman.h>
+	<sys/uio.h>
+	<unistd.h>
+	<sys/utsname.h>
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/StaticFunctions/StaticFunctions.h
+	"../general.h"
+	"../System/BasicTypes/BasicTypes.h"
+	"../System/String/String.h"
+	<malloc.h>
+	<stdlib.h>
+	<unistd.h>
+	< time.h >
+	<sys/time.h>
+	<sys/types.h>
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System/ArgumentException/ArgumentNullException.h
+	"../Exception/Exception.h"
+	"../String/String.h"
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System.Collections/ArrayList/ArrayList.h
+	"../../System/Object/Object.h"
+	"../../System/ArgumentException/ArgumentOutOfRangeException.h"
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System/ArgumentException/ArgumentOutOfRangeException.h
+	"../Exception/Exception.h"
+	"../String/String.h"
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System.IO/FileStream/FileStream.h
+	"../../System/Object/Object.h"
+	"../IOException/IOException.h"
+	"../../System/ArgumentException/ArgumentException.h"
+	"../../System/ArgumentException/ArgumentNullException.h"
+	"../../System/ArgumentException/ArgumentOutOfRangeException.h"
+	"../../System/NotSupportedException/NotSupportedException.h"
+	"../../System/ObjectDisposedException/ObjectDisposedException.h"
+	"../../System/BasicTypes/BasicTypes.h"
+	<stdio.h>
+	<fcntl.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<errno.h>
+	<stdlib.h>
+	<sys/io.h>
+	<sys/fcntl.h>
+	<unistd.h>
+	<sys/file.h>
+	<io.h>
+	<share.h>
+	<sys/locking.h>
+	<windows.h>
+	"../../System/Exception/Exception.h"
+	"../../System/String/String.h"
+	"../IOException/IOException.h"
+	"../../StaticFunctions/StaticFunctions.h"
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System.IO/IOException/IOException.h
+	"../../System/Exception/Exception.h"
+	"../../System/String/String.h"
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System/ArgumentException/ArgumentException.h
+	"../Exception/Exception.h"
+	"../String/String.h"
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System/NotSupportedException/NotSupportedException.h
+	"../Exception/Exception.h"
+	"../String/String.h"
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System.Net.Sockets/Socket/Socket.h
+	"../../general.h"
+	"../../StaticFunctions/StaticFunctions.h"
+	"../../System/Exception/Exception.h"
+	"../../System/BasicTypes/BasicTypes.h"
+	"../../System/String/String.h"
+	"../../System.Collections/ArrayList/ArrayList.h"
+	"../../System/ObjectDisposedException/ObjectDisposedException.h"
+	"../../System/InvalidOperationException/InvalidOperationException.h"
+	"../../System/ArgumentException/ArgumentNullException.h"
+	"../SocketException/SocketException.h"
+	"../AddressFamily/AddressFamily.h"
+	"../ProtocolType/ProtocolType.h"
+	"../SocketType/SocketType.h"
+	"../SocketFlags/SocketFlags.h"
+	"../SocketShutdown/SocketShutdown.h"
+	"../../System.Net/IPEndPoint/IPEndPoint.h"
+	<stdio.h>
+	<winsock2.h>
+	<ws2tcpip.h>
+	<errno.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<netdb.h>
+	<unistd.h>
+	<arpa/inet.h>
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System/InvalidOperationException/InvalidOperationException.h
+	"../Exception/Exception.h"
+	"../String/String.h"
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System.Net.Sockets/SocketException/SocketException.h
+	"../../System/Exception/Exception.h"
+	"../../System/String/String.h"
+	<winsock2.h>
+	<errno.h>
+	<sys/socket.h>
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System.Net.Sockets/AddressFamily/AddressFamily.h
+	<winsock2.h>
+	<errno.h>
+	<sys/socket.h>
+	<netinet/in.h>
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System.Net.Sockets/ProtocolType/ProtocolType.h
+	<winsock2.h>
+	<errno.h>
+	<sys/socket.h>
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System.Net.Sockets/SocketType/SocketType.h
+	<errno.h>
+	<sys/socket.h>
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System.Net.Sockets/SocketFlags/SocketFlags.h
+	<mswsock.h>
+	<errno.h>
+	<sys/socket.h>
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System.Net.Sockets/SocketShutdown/SocketShutdown.h
+	<errno.h>
+	<sys/socket.h>
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System.Net/IPEndPoint/IPEndPoint.h
+	"../../System/ArgumentException/ArgumentOutOfRangeException.h"
+	"../../System.Net.Sockets/AddressFamily/AddressFamily.h"
+	"../IPAddress/IPAddress.h"
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System.Net/IPAddress/IPAddress.h
+	"../../System/NotSupportedException/NotSupportedException.h"
+	"../../System.Net.Sockets/AddressFamily/AddressFamily.h"
+
+1653693139 /root/devel/book/Parvicursor/Parvicursor/System.Net/Dns/Dns.h
+	"../../System/String/String.h"
+	"../../System/ArgumentException/ArgumentNullException.h"
+	"../../System.Net.Sockets/SocketException/SocketException.h"
+	"../IPHostEntry/IPHostEntry.h"
+	"../../StaticFunctions/StaticFunctions.h"
+	<ws2tcpip.h>
+	<sys/types.h>
+	<errno.h>
+	<sys/socket.h>
+	<netdb.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<arpa/inet.h>
+	<stdio.h>
+	<string.h>
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System.Net/IPHostEntry/IPHostEntry.h
+	"../../System/String/String.h"
+	"../../System/ArgumentException/ArgumentOutOfRangeException.h"
+	"../IPAddress/IPAddress.h"
+	<ws2tcpip.h>
+	<errno.h>
+	<sys/socket.h>
+	<netdb.h>
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System.Net/NetworkCredential/NetworkCredential.h
+	"../../System/String/String.h"
+	"../../System/Object/Object.h"
+	"../../System/ArgumentException/ArgumentNullException.h"
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System/Guid/Guid.h
+	<stdio.h>
+	"../../System/Object/Object.h"
+	"../../System/String/String.h"
+	<objbase.h>
+	<rpc.h>
+	<uuid/uuid.h>
+
+1653692646 /root/devel/book/Parvicursor/Parvicursor/Parvicursor/Parvicursor.Net/ParvicursorSocket/ParvicursorSocket.h
+	"../../../System/Object/Object.h"
+	"../../../System/BasicTypes/BasicTypes.h"
+	"../../../System.Net.Sockets/Socket/Socket.h"
+	"../../../System/Exception/Exception.h"
+	"../../../System.IO/FileStream/FileStream.h"
+	"../../../System.Threading/Mutex/Mutex.h"
+	"../../../Parvicursor/Parvicursor.Cryptography/AesEngine/AesEngine.h"
+	"../../../Parvicursor/Parvicursor.Cryptography/ShaEngine/ShaEngine.h"
+	"../../../Parvicursor/Parvicursor.Cryptography/RsaEngine/RsaEngine.h"
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System.Threading/Mutex/Mutex.h
+	"../../general.h"
+	"../../System/Object/Object.h"
+	"../../System/BasicTypes/BasicTypes.h"
+	"../../System/Exception/Exception.h"
+	"../../System/ObjectDisposedException/ObjectDisposedException.h"
+	"../../System.Threading/Thread/Thread.h"
+
+1653693268 /root/devel/book/Parvicursor/Parvicursor/System.Threading/Thread/Thread.h
+	"../../general.h"
+	"../../StaticFunctions/StaticFunctions.h"
+	"../../System/Object/Object.h"
+	"../../System/Exception/Exception.h"
+	"../../System/String/String.h"
+	"pthread.h"
+	<unistd.h>
+	<pthread.h>
+	<sched.h>
+	<signal.h>
+	<time.h>
+	<sys/time.h>
+	<semaphore.h>
+	<unistd.h>
+	<errno.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	<signal.h>
+	<time.h>
+	<stdio.h>
+	<errno.h>
+
+1379073878 /root/devel/book/Parvicursor/Parvicursor/System.Threading/Thread/pthread.h
+	<windows.h>
+	"config.h"
+	<time.h>
+	<signal.h>
+	<setjmp.h>
+	<limits.h>
+	"need_errno.h"
+	<errno.h>
+	"sched.h"
+	<sys/types.h>
+
+1379073880 /root/devel/book/Parvicursor/Parvicursor/System.Threading/Thread/sched.h
+	"need_errno.h"
+	<errno.h>
+	<sys/types.h>
+	<time.h>
+
+1653692644 /root/devel/book/Parvicursor/Parvicursor/Parvicursor/Parvicursor.Cryptography/AesEngine/AesEngine.h
+	"../../../general.h"
+	"../../../System/BasicTypes/BasicTypes.h"
+	"../../../System/ArgumentException/ArgumentNullException.h"
+	"../../../System/ArgumentException/ArgumentOutOfRangeException.h"
+	"../../../System/ObjectDisposedException/ObjectDisposedException.h"
+	<cryptopp/modes.h>
+	<cryptopp/aes.h>
+	<cryptopp/filters.h>
+	<cryptopp/rng.h>
+	<cryptopp/osrng.h>
+
+1653692646 /root/devel/book/Parvicursor/Parvicursor/Parvicursor/Parvicursor.Cryptography/ShaEngine/ShaEngine.h
+	"../../../general.h"
+	"../../../System/BasicTypes/BasicTypes.h"
+	"../../../System/ArgumentException/ArgumentOutOfRangeException.h"
+	"../../../System/ArgumentException/ArgumentNullException.h"
+	<cryptopp/sha.h>
+
+1653692646 /root/devel/book/Parvicursor/Parvicursor/Parvicursor/Parvicursor.Cryptography/RsaEngine/RsaEngine.h
+	"../../../general.h"
+	"../../../System/BasicTypes/BasicTypes.h"
+	"../../../System/ArgumentException/ArgumentNullException.h"
+	"../../../System/ArgumentException/ArgumentOutOfRangeException.h"
+	"../../../System/ObjectDisposedException/ObjectDisposedException.h"
+	<cryptopp/modes.h>
+	<cryptopp/aes.h>
+	<cryptopp/filters.h>
+	<cryptopp/rng.h>
+	<cryptopp/osrng.h>
+	<cryptopp/rsa.h>
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System.Threading/ConditionVariable/ConditionVariable.h
+	"../../general.h"
+	"../../System/Object/Object.h"
+	"../../System/BasicTypes/BasicTypes.h"
+	"../../System/Exception/Exception.h"
+	"../../System/ArgumentException/ArgumentNullException.h"
+	"../../System/ObjectDisposedException/ObjectDisposedException.h"
+	"../../System.Threading/Thread/Thread.h"
+	"../../System.Threading/Mutex/Mutex.h"
+
+1653693268 /root/devel/book/Parvicursor/Parvicursor/Parvicursor/Shared/Enums/xDFS/TransferChannelMode.h
+
+1653692646 /root/devel/book/Parvicursor/Parvicursor/Parvicursor/Serialization/Serializer.h
+	"../../System/BasicTypes/BasicTypes.h"
+	"../../System/Object/Object.h"
+	"../../System/ArgumentException/ArgumentOutOfRangeException.h"
+	"../../System/ArgumentException/ArgumentNullException.h"
+	"../../System/Convert/Convert.h"
+	<memory.h>
+	<string.h>
+	<stdio.h>
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System/Convert/Convert.h
+	"../String/String.h"
+	"../ArgumentException/ArgumentNullException.h"
+	"../FormatException/FormatException.h"
+	"../OverflowException/OverflowException.h"
+	"../BasicTypes/BasicTypes.h"
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<string>
+	<sstream>
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System/FormatException/FormatException.h
+	"../Exception/Exception.h"
+	"../String/String.h"
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System/OverflowException/OverflowException.h
+	"../Exception/Exception.h"
+	"../String/String.h"
+
+1653692646 /root/devel/book/Parvicursor/Parvicursor/Parvicursor/Serialization/DeSerializer.h
+	"../../System/BasicTypes/BasicTypes.h"
+	"../../System/Object/Object.h"
+	"../../System/ArgumentException/ArgumentOutOfRangeException.h"
+	"../../System/ArgumentException/ArgumentNullException.h"
+	<memory.h>
+	<string.h>
+	<stdio.h>
+
+1653693264 source:/root/devel/book/Parvicursor/Parvicursor/Parvicursor/xDFS/xDFSClients/UploadClient/UploadClient.cpp
+	"UploadClient.h"
+
+1653693264 /root/devel/book/Parvicursor/Parvicursor/Parvicursor/xDFS/xDFSClients/UploadClient/UploadClient.h
+	"../../../../general.h"
+	"../../../../StaticFunctions/StaticFunctions.h"
+	"../../../../System/BasicTypes/BasicTypes.h"
+	"../../../../System/Object/Object.h"
+	"../../../../System/ArgumentException/ArgumentNullException.h"
+	"../../../../System.Collections/ArrayList/ArrayList.h"
+	"../../../../System.IO/FileStream/FileStream.h"
+	"../../../../System.Net.Sockets/Socket/Socket.h"
+	"../../../../System.Net/Dns/Dns.h"
+	"../../../../System.Net/NetworkCredential/NetworkCredential.h"
+	"../../../../System/Guid/Guid.h"
+	"../../../../System.Threading/Thread/Thread.h"
+	"../../../../System.Threading/Mutex/Mutex.h"
+	"../../../../System.Threading/ConditionVariable/ConditionVariable.h"
+	"../../../../System.IO/IOException/IOException.h"
+	"../../../../Parvicursor/Parvicursor.Net/ParvicursorSocket/ParvicursorSocket.h"
+	"../../../../Parvicursor/Shared/Enums/xDFS/TransferChannelMode.h"
+	"../../../../Parvicursor/Shared/Enums/xDFS/CircularBufferState.h"
+	"../../../../Parvicursor/Serialization/Serializer.h"
+	"../../../../Parvicursor/Serialization/DeSerializer.h"
+	"../../../../Parvicursor/Profiler/ResourceProfiler.h"
+	<fcntl.h>
+	<sys/types.h>
+	<sys/mman.h>
+	<sys/uio.h>
+	<unistd.h>
+	<sys/utsname.h>
+
+1653693268 /root/devel/book/Parvicursor/Parvicursor/Parvicursor/Shared/Enums/xDFS/CircularBufferState.h
+
+1653692646 /root/devel/book/Parvicursor/Parvicursor/Parvicursor/Profiler/ResourceProfiler.h
+	"../../general.h"
+	"../../StaticFunctions/StaticFunctions.h"
+	"../../System/BasicTypes/BasicTypes.h"
+	"../../System/Object/Object.h"
+	"../../System/Exception/Exception.h"
+	<time.h>
+	<math.h>
+	<stdlib.h>
+
+1653693265 source:/root/devel/book/Parvicursor/Parvicursor/Parvicursor/xDFS/FileTransferInfo/FileTransferInfo.cpp
+	"FileTransferInfo.h"
+
+1653693265 /root/devel/book/Parvicursor/Parvicursor/Parvicursor/xDFS/FileTransferInfo/FileTransferInfo.h
+	"../../../general.h"
+	"../../../System/BasicTypes/BasicTypes.h"
+	"../../../System/Object/Object.h"
+	"../../../System/String/String.h"
+	"../../../System/ArgumentException/ArgumentNullException.h"
+
+1653692644 source:/root/devel/book/Parvicursor/Parvicursor/Parvicursor/Parvicursor.Cryptography/AesEngine/AesEngine.cpp
+	"AesEngine.h"
+
+1653692646 source:/root/devel/book/Parvicursor/Parvicursor/Parvicursor/Parvicursor.Cryptography/RsaEngine/RsaEngine.cpp
+	"RsaEngine.h"
+
+1653692646 source:/root/devel/book/Parvicursor/Parvicursor/Parvicursor/Parvicursor.Cryptography/ShaEngine/ShaEngine.cpp
+	"ShaEngine.h"
+
+1653692646 source:/root/devel/book/Parvicursor/Parvicursor/Parvicursor/Parvicursor.Net/ParvicursorSocket/ParvicursorSocket.cpp
+	"ParvicursorSocket.h"
+
+1653692646 source:/root/devel/book/Parvicursor/Parvicursor/Parvicursor/Profiler/ResourceProfiler.cpp
+	"ResourceProfiler.h"
+	<psapi.h>
+	<sys/time.h>
+	<sys/resource.h>
+	<errno.h>
+	<stdio.h>
+	<tchar.h>
+	<Ntsecapi.h>
+
+1653692646 source:/root/devel/book/Parvicursor/Parvicursor/Parvicursor/Serialization/DeSerializer.cpp
+	"DeSerializer.h"
+
+1653692646 source:/root/devel/book/Parvicursor/Parvicursor/Parvicursor/Serialization/Serializer.cpp
+	"Serializer.h"
+
+1653692646 source:/root/devel/book/Parvicursor/Parvicursor/Parvicursor/xThread/xThreadBase.cpp
+	"xThreadBase.h"
+
+1653692646 /root/devel/book/Parvicursor/Parvicursor/Parvicursor/xThread/xThreadBase.h
+	"../../System/BasicTypes/BasicTypes.h"
+	"../../Parvicursor/Serialization/Serializer.h"
+	"../../Parvicursor/Serialization/DeSerializer.h"
+	"../../System/Object/Object.h"
+	"../../System/ArgumentException/ArgumentNullException.h"
+
+1653693268 source:/root/devel/book/Parvicursor/Parvicursor/Parvicursor/xThread/xThreadClient/xThreadClient.cpp
+	"xThreadClient.h"
+
+1653693268 /root/devel/book/Parvicursor/Parvicursor/Parvicursor/xThread/xThreadClient/xThreadClient.h
+	"../../../general.h"
+	"../../../System/BasicTypes/BasicTypes.h"
+	"../../../System/Object/Object.h"
+	"../../../System/Guid/Guid.h"
+	"../../../System/ArgumentException/ArgumentNullException.h"
+	"../../../System.Collections/ArrayList/ArrayList.h"
+	"../../../System.IO/FileStream/FileStream.h"
+	"../../../System.Net.Sockets/Socket/Socket.h"
+	"../../../System.Net/Dns/Dns.h"
+	"../../../System.Net/NetworkCredential/NetworkCredential.h"
+	"../../../StaticFunctions/StaticFunctions.h"
+	"../../../Parvicursor/Parvicursor.Net/ParvicursorSocket/ParvicursorSocket.h"
+	"../../../../Parvicursor/System.Threading/Thread/Thread.h"
+	"../../../../Parvicursor/System.Threading/Mutex/Mutex.h"
+	"../../../../Parvicursor/System.Threading/ConditionVariable/ConditionVariable.h"
+	"../../../../Parvicursor/System.Threading/ThreadStateException/ThreadStateException.h"
+	"../../../../Parvicursor/System.IO/IOException/IOException.h"
+	"../../../Parvicursor/Shared/Enums/xDFS/TransferChannelMode.h"
+	"../../../Parvicursor/Serialization/Serializer.h"
+	"../../../Parvicursor/Serialization/DeSerializer.h"
+	"../../../../Parvicursor/Parvicursor/xThread/xThreadCollection.h"
+	"../../../../Parvicursor/Parvicursor/xThread/xThreadEvent.h"
+
+1653692648 /root/devel/book/Parvicursor/Parvicursor/System.Threading/ThreadStateException/ThreadStateException.h
+	"../../System/Exception/Exception.h"
+	"../../System/String/String.h"
+
+1653692646 /root/devel/book/Parvicursor/Parvicursor/Parvicursor/xThread/xThreadCollection.h
+	"../../StaticFunctions/StaticFunctions.h"
+	"../../Parvicursor/xThread/xThreadBase.h"
+	"../../Parvicursor/Serialization/Serializer.h"
+	"../../System.IO/File/File.h"
+	"../../System.IO/FileStream/FileStream.h"
+	"../../System.IO/IOException/IOException.h"
+	"../../System/BasicTypes/BasicTypes.h"
+	"../../System.Threading/Thread/Thread.h"
+	"../../System.Threading/Barrier/Barrier.h"
+	"../../System/Object/Object.h"
+	"../../System/ArgumentException/ArgumentNullException.h"
+	"../../System.Collections/ArrayList/ArrayList.h"
+	"../../System.IO/Directory/Directory.h"
+	"../../System/Guid/Guid.h"
+	<sys/types.h>
+	<dlfcn.h>
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System.IO/File/File.h
+	<stdio.h>
+	<fcntl.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<errno.h>
+	<stdlib.h>
+	"../../general.h"
+	"../../System/Object/Object.h"
+	"../IOException/IOException.h"
+	"../../System/ArgumentException/ArgumentException.h"
+	"../../System/ArgumentException/ArgumentNullException.h"
+	"../../System/ArgumentException/ArgumentOutOfRangeException.h"
+	"../../System/NotSupportedException/NotSupportedException.h"
+	"../../System/ObjectDisposedException/ObjectDisposedException.h"
+	"../../System/String/String.h"
+	"../DirectoryNotFoundException/DirectoryNotFoundException.h"
+	"../../StaticFunctions/StaticFunctions.h"
+	<sys/io.h>
+	<sys/fcntl.h>
+	<unistd.h>
+	<sys/file.h>
+	<io.h>
+	<share.h>
+	<sys/locking.h>
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System.IO/DirectoryNotFoundException/DirectoryNotFoundException.h
+	"../../System/Exception/Exception.h"
+	"../../System/String/String.h"
+	"../IOException/IOException.h"
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System.Threading/Barrier/Barrier.h
+	"../../general.h"
+	"../../System/Object/Object.h"
+	"../../System/BasicTypes/BasicTypes.h"
+	"../../System/Exception/Exception.h"
+	"../../System/ObjectDisposedException/ObjectDisposedException.h"
+	"../../System.Threading/Thread/Thread.h"
+	"../../System.Threading/Mutex/Mutex.h"
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System.IO/Directory/Directory.h
+	<stdio.h>
+	<fcntl.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<errno.h>
+	<stdlib.h>
+	"../../general.h"
+	"../../System/Object/Object.h"
+	"../IOException/IOException.h"
+	"../../System/ArgumentException/ArgumentException.h"
+	"../../System/ArgumentException/ArgumentNullException.h"
+	"../../System/ArgumentException/ArgumentOutOfRangeException.h"
+	"../../System/NotSupportedException/NotSupportedException.h"
+	"../../System/ObjectDisposedException/ObjectDisposedException.h"
+	"../../System.Collections/ArrayList/ArrayList.h"
+	"../../System/String/String.h"
+	"../DirectoryNotFoundException/DirectoryNotFoundException.h"
+	"../../StaticFunctions/StaticFunctions.h"
+	"../File/File.h"
+	<sys/io.h>
+	<sys/fcntl.h>
+	<unistd.h>
+	<sys/file.h>
+	<dirent.h>
+	<string.h>
+	<direct.h>
+	<io.h>
+	<share.h>
+	<sys/locking.h>
+	<stdio.h>
+	<malloc.h>
+	<tchar.h>
+	<wchar.h>
+	<strsafe.h>
+
+1653692646 /root/devel/book/Parvicursor/Parvicursor/Parvicursor/xThread/xThreadEvent.h
+	"../../System/BasicTypes/BasicTypes.h"
+
+1653692646 source:/root/devel/book/Parvicursor/Parvicursor/Parvicursor/xThread/xThreadCollection.cpp
+	"xThreadCollection.h"
+
+1653692646 source:/root/devel/book/Parvicursor/Parvicursor/StaticFunctions/StaticFunctions.cpp
+	"StaticFunctions.h"
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	<sys/types.h>
+	<fcntl.h>
+	<string.h>
+	<errno.h>
+	<unistd.h>
+	<sys/param.h>
+	<sys/sendfile.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<sys/uio.h>
+	<unistd.h>
+	<sys/syscall.h>
+
+1653692647 source:/root/devel/book/Parvicursor/Parvicursor/System.Collections/ArrayList/ArrayList.cpp
+	"ArrayList.h"
+
+1653692647 source:/root/devel/book/Parvicursor/Parvicursor/System.Collections/Hashtable/Hashtable.cpp
+	"Hashtable.h"
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System.Collections/Hashtable/Hashtable.h
+	"../../System/Object/Object.h"
+	"../../System/ArgumentException/ArgumentNullException.h"
+	"../../System/ArgumentException/ArgumentException.h"
+	"../../System.Collections/ArrayList/ArrayList.h"
+	<ctype.h>
+
+1653692647 source:/root/devel/book/Parvicursor/Parvicursor/System.Collections/Queue/Queue.cpp
+	"Queue.h"
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System.Collections/Queue/Queue.h
+	"../../System/Object/Object.h"
+	"../../System/ArgumentException/ArgumentOutOfRangeException.h"
+	"../../System/InvalidOperationException/InvalidOperationException.h"
+	"../../Parvicursor/Collections/SinglyLinkedList.h"
+
+1653692647 source:/root/devel/book/Parvicursor/Parvicursor/System.IO/Directory/Directory.cpp
+	"Directory.h"
+
+1653692647 source:/root/devel/book/Parvicursor/Parvicursor/System.IO/DirectoryNotFoundException/DirectoryNotFoundException.cpp
+	"DirectoryNotFoundException.h"
+
+1653692647 source:/root/devel/book/Parvicursor/Parvicursor/System.IO/File/File.cpp
+	"File.h"
+
+1653692647 source:/root/devel/book/Parvicursor/Parvicursor/System.IO/FileStream/FileStream.cpp
+	"FileStream.h"
+
+1653692647 source:/root/devel/book/Parvicursor/Parvicursor/System.IO/IOException/IOException.cpp
+	"IOException.h"
+
+1653692647 source:/root/devel/book/Parvicursor/Parvicursor/System.Net.Sockets/Socket/Socket.cpp
+	"Socket.h"
+
+1653692647 source:/root/devel/book/Parvicursor/Parvicursor/System.Net.Sockets/SocketException/SocketException.cpp
+	"SocketException.h"
+
+1653692647 source:/root/devel/book/Parvicursor/Parvicursor/System.Net/Dns/Dns.cpp
+	"Dns.h"
+
+1653692647 source:/root/devel/book/Parvicursor/Parvicursor/System.Net/IPAddress/IPAddress.cpp
+	"IPAddress.h"
+
+1653692647 source:/root/devel/book/Parvicursor/Parvicursor/System.Net/IPEndPoint/IPEndPoint.cpp
+	"IPEndPoint.h"
+
+1653692647 source:/root/devel/book/Parvicursor/Parvicursor/System.Net/IPHostEntry/IPHostEntry.cpp
+	"IPHostEntry.h"
+
+1653692647 source:/root/devel/book/Parvicursor/Parvicursor/System.Net/NetworkCredential/NetworkCredential.cpp
+	"NetworkCredential.h"
+
+1653692647 source:/root/devel/book/Parvicursor/Parvicursor/System.Threading/Barrier/Barrier.cpp
+	"Barrier.h"
+
+1653692647 source:/root/devel/book/Parvicursor/Parvicursor/System.Threading/ConditionVariable/ConditionVariable.cpp
+	"ConditionVariable.h"
+
+1653692647 source:/root/devel/book/Parvicursor/Parvicursor/System.Threading/Fiber/Fiber.cpp
+	"Fiber.h"
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System.Threading/Fiber/Fiber.h
+	<malloc.h>
+	<ucontext.h>
+	<stdio.h>
+	<stdlib.h>
+	<unistd.h>
+	<memory.h>
+	"../../general.h"
+	"../../System/Object/Object.h"
+	"../../System/BasicTypes/BasicTypes.h"
+	"../../System/Exception/Exception.h"
+	"../../System/ObjectDisposedException/ObjectDisposedException.h"
+	"../../System/ArgumentException/ArgumentNullException.h"
+	"../../System.Threading/Thread/Thread.h"
+
+1653692647 source:/root/devel/book/Parvicursor/Parvicursor/System.Threading/Mutex/Mutex.cpp
+	"Mutex.h"
+
+1653692648 source:/root/devel/book/Parvicursor/Parvicursor/System.Threading/Thread/Thread.cpp
+	"Thread.h"
+
+1653692648 source:/root/devel/book/Parvicursor/Parvicursor/System.Threading/ThreadPool/ThreadPool.cpp
+	"ThreadPool.h"
+
+1653692648 /root/devel/book/Parvicursor/Parvicursor/System.Threading/ThreadPool/ThreadPool.h
+	"../../general.h"
+	"../../System/BasicTypes/BasicTypes.h"
+	"../../System/Object/Object.h"
+	"../../System.Collections/Queue/Queue.h"
+	"../../System/ObjectDisposedException/ObjectDisposedException.h"
+	"../../System.Threading/Thread/Thread.h"
+	"../../System.Threading/Mutex/Mutex.h"
+	"../../System.Threading/ConditionVariable/ConditionVariable.h"
+
+1653692648 source:/root/devel/book/Parvicursor/Parvicursor/System.Threading/ThreadStateException/ThreadStateException.cpp
+	"ThreadStateException.h"
+
+1653692648 source:/root/devel/book/Parvicursor/Parvicursor/System.Threading/Timer/Timer.cpp
+	"Timer.h"
+
+1653692648 /root/devel/book/Parvicursor/Parvicursor/System.Threading/Timer/Timer.h
+	"../../System/BasicTypes/BasicTypes.h"
+	"../../System/Object/Object.h"
+	"../../System/ArgumentException/ArgumentNullException.h"
+	"../../System/ArgumentException/ArgumentOutOfRangeException.h"
+	"../../System.Threading/Thread/Thread.h"
+	<ctype.h>
+
+1653692647 source:/root/devel/book/Parvicursor/Parvicursor/System/ArgumentException/ArgumentException.cpp
+	"ArgumentException.h"
+
+1653692647 source:/root/devel/book/Parvicursor/Parvicursor/System/ArgumentException/ArgumentNullException.cpp
+	"ArgumentNullException.h"
+
+1653692647 source:/root/devel/book/Parvicursor/Parvicursor/System/ArgumentException/ArgumentOutOfRangeException.cpp
+	"ArgumentOutOfRangeException.h"
+
+1653692647 source:/root/devel/book/Parvicursor/Parvicursor/System/Convert/Convert.cpp
+	"Convert.h"
+
+1653692647 source:/root/devel/book/Parvicursor/Parvicursor/System/DateTime/DateTime.cpp
+	"DateTime.h"
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System/DateTime/DateTime.h
+	"../../System/Object/Object.h"
+	"../../System/BasicTypes/BasicTypes.h"
+	<windows.h>
+	<sys/time.h>
+	<time.h>
+	<unistd.h>
+
+1653692647 source:/root/devel/book/Parvicursor/Parvicursor/System/Environment/Environment.cpp
+	"Environment.h"
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System/Environment/Environment.h
+	"../String/String.h"
+	"../BasicTypes/BasicTypes.h"
+	<windows.h>
+	<sys/param.h>
+	<sys/sysctl.h>
+	<unistd.h>
+
+1653692647 source:/root/devel/book/Parvicursor/Parvicursor/System/Exception/Exception.cpp
+	"Exception.h"
+
+1653692647 source:/root/devel/book/Parvicursor/Parvicursor/System/FormatException/FormatException.cpp
+	"FormatException.h"
+
+1653692647 source:/root/devel/book/Parvicursor/Parvicursor/System/Guid/Guid.cpp
+	"Guid.h"
+
+1653692647 source:/root/devel/book/Parvicursor/Parvicursor/System/InvalidOperationException/InvalidOperationException.cpp
+	"InvalidOperationException.h"
+
+1653692647 source:/root/devel/book/Parvicursor/Parvicursor/System/NotSupportedException/NotSupportedException.cpp
+	"NotSupportedException.h"
+
+1653692647 source:/root/devel/book/Parvicursor/Parvicursor/System/Object/Object.cpp
+	"Object.h"
+
+1653692647 source:/root/devel/book/Parvicursor/Parvicursor/System/ObjectDisposedException/ObjectDisposedException.cpp
+	"ObjectDisposedException.h"
+
+1653692647 source:/root/devel/book/Parvicursor/Parvicursor/System/OverflowException/OverflowException.cpp
+	"OverflowException.h"
+
+1653692647 source:/root/devel/book/Parvicursor/Parvicursor/System/Random/Random.cpp
+	"Random.h"
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System/Random/Random.h
+	"../String/String.h"
+	"../ArgumentException/ArgumentNullException.h"
+	"../FormatException/FormatException.h"
+	"../OverflowException/OverflowException.h"
+	"../BasicTypes/BasicTypes.h"
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
+1653692647 source:/root/devel/book/Parvicursor/Parvicursor/System/String/String.cpp
+	<string.h>
+	<stdio.h>
+	"String.h"
+	"../../System.Collections/ArrayList/ArrayList.h"
+	"../../System/ArgumentException/ArgumentNullException.h"
+	"../../System/ArgumentException/ArgumentOutOfRangeException.h"
+	"../../System/ObjectDisposedException/ObjectDisposedException.h"
+
+1653692647 source:/root/devel/book/Parvicursor/Parvicursor/System/Type/Type.cpp
+	"../String/String.h"
+	"Type.h"
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System/Type/Type.h
+	"../String/String.h"
+

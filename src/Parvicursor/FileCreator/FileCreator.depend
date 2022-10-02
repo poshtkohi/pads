@@ -1,0 +1,273 @@
+# depslib dependency file v1.0
+1350066180 source:/root/projects/FileCreator/main.cpp
+	"stdafx.h"
+	"../Parvicursor/general.h"
+	"../Parvicursor/System/String/String.h"
+	"../Parvicursor/System/Convert/Convert.h"
+	"../Parvicursor/System/BasicTypes/BasicTypes.h"
+	"../Parvicursor/System.IO/FileStream/FileStream.h"
+	"../Parvicursor/System.IO/Directory/Directory.h"
+	"../Parvicursor/System.IO/File/File.h"
+	"../Parvicursor/Parvicursor/Profiler/ResourceProfiler.h"
+	<iostream>
+	<iomanip>
+
+1350066180 /root/projects/FileCreator/stdafx.h
+
+1350066180 /root/projects/Parvicursor/general.h
+	<atlstr.h>
+	<windows.h>
+	<stdio.h>
+	<iostream>
+	<string>
+
+1350066240 /root/projects/Parvicursor/System/String/String.h
+	"../Object/Object.h"
+	"../BasicTypes/BasicTypes.h"
+
+1350066240 /root/projects/Parvicursor/System/Object/Object.h
+	"../BasicTypes/BasicTypes.h"
+
+1359119340 /root/projects/Parvicursor/System/BasicTypes/BasicTypes.h
+	"../../general.h"
+
+1350066240 /root/projects/Parvicursor/System/Convert/Convert.h
+	"../String/String.h"
+	"../ArgumentException/ArgumentNullException.h"
+	"../FormatException/FormatException.h"
+	"../OverflowException/OverflowException.h"
+	"../BasicTypes/BasicTypes.h"
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<string>
+	<sstream>
+
+1350066240 /root/projects/Parvicursor/System/ArgumentException/ArgumentNullException.h
+	"../Exception/Exception.h"
+	"../String/String.h"
+
+1350066240 /root/projects/Parvicursor/System/Exception/Exception.h
+	"../Object/Object.h"
+	"../String/String.h"
+	"../BasicTypes/BasicTypes.h"
+
+1350066240 /root/projects/Parvicursor/System/FormatException/FormatException.h
+	"../Exception/Exception.h"
+	"../String/String.h"
+
+1350066240 /root/projects/Parvicursor/System/OverflowException/OverflowException.h
+	"../Exception/Exception.h"
+	"../String/String.h"
+
+1359033600 /root/projects/Parvicursor/System.IO/FileStream/FileStream.h
+	"../../System/Object/Object.h"
+	"../IOException/IOException.h"
+	"../../System/ArgumentException/ArgumentException.h"
+	"../../System/ArgumentException/ArgumentNullException.h"
+	"../../System/ArgumentException/ArgumentOutOfRangeException.h"
+	"../../System/NotSupportedException/NotSupportedException.h"
+	"../../System/ObjectDisposedException/ObjectDisposedException.h"
+	"../../System/BasicTypes/BasicTypes.h"
+	<stdio.h>
+	<fcntl.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<errno.h>
+	<stdlib.h>
+	<sys/io.h>
+	<sys/fcntl.h>
+	<unistd.h>
+	<sys/file.h>
+	<io.h>
+	<share.h>
+	<sys/locking.h>
+	<windows.h>
+	"../../System/Exception/Exception.h"
+	"../../System/String/String.h"
+	"../IOException/IOException.h"
+	"../../StaticFunctions/StaticFunctions.h"
+
+1350066240 /root/projects/Parvicursor/System.IO/IOException/IOException.h
+	"../../System/Exception/Exception.h"
+	"../../System/String/String.h"
+
+1350066240 /root/projects/Parvicursor/System/ArgumentException/ArgumentException.h
+	"../Exception/Exception.h"
+	"../String/String.h"
+
+1350066240 /root/projects/Parvicursor/System/ArgumentException/ArgumentOutOfRangeException.h
+	"../Exception/Exception.h"
+	"../String/String.h"
+
+1350066240 /root/projects/Parvicursor/System/NotSupportedException/NotSupportedException.h
+	"../Exception/Exception.h"
+	"../String/String.h"
+
+1350066240 /root/projects/Parvicursor/System/ObjectDisposedException/ObjectDisposedException.h
+	"../Exception/Exception.h"
+	"../String/String.h"
+
+1359684420 /root/projects/Parvicursor/StaticFunctions/StaticFunctions.h
+	"../general.h"
+	"../System/BasicTypes/BasicTypes.h"
+	"../System/String/String.h"
+	"../System.Net.Sockets/Socket/Socket.h"
+	<sys/types.h>
+
+1359570540 /root/projects/Parvicursor/System.Net.Sockets/Socket/Socket.h
+	"../../general.h"
+	"../../StaticFunctions/StaticFunctions.h"
+	"../../System/Exception/Exception.h"
+	"../../System/BasicTypes/BasicTypes.h"
+	"../../System/String/String.h"
+	"../../System.Collections/ArrayList/ArrayList.h"
+	"../../System/ObjectDisposedException/ObjectDisposedException.h"
+	"../../System/InvalidOperationException/InvalidOperationException.h"
+	"../../System/ArgumentException/ArgumentNullException.h"
+	"../SocketException/SocketException.h"
+	"../AddressFamily/AddressFamily.h"
+	"../ProtocolType/ProtocolType.h"
+	"../SocketType/SocketType.h"
+	"../SocketFlags/SocketFlags.h"
+	"../SocketShutdown/SocketShutdown.h"
+	"../../System.Net/IPEndPoint/IPEndPoint.h"
+	<stdio.h>
+	<winsock2.h>
+	<ws2tcpip.h>
+	<errno.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<netdb.h>
+	<unistd.h>
+	<arpa/inet.h>
+
+1350066240 /root/projects/Parvicursor/System.Collections/ArrayList/ArrayList.h
+	"../../System/Object/Object.h"
+	"../../System/ArgumentException/ArgumentOutOfRangeException.h"
+
+1350066240 /root/projects/Parvicursor/System/InvalidOperationException/InvalidOperationException.h
+	"../Exception/Exception.h"
+	"../String/String.h"
+
+1350066240 /root/projects/Parvicursor/System.Net.Sockets/SocketException/SocketException.h
+	"../../System/Exception/Exception.h"
+	"../../System/String/String.h"
+	<winsock2.h>
+	<errno.h>
+	<sys/socket.h>
+
+1350066240 /root/projects/Parvicursor/System.Net.Sockets/AddressFamily/AddressFamily.h
+	<winsock2.h>
+	<errno.h>
+	<sys/socket.h>
+	<netinet/in.h>
+
+1350066240 /root/projects/Parvicursor/System.Net.Sockets/ProtocolType/ProtocolType.h
+	<winsock2.h>
+	<errno.h>
+	<sys/socket.h>
+
+1350066240 /root/projects/Parvicursor/System.Net.Sockets/SocketType/SocketType.h
+	<errno.h>
+	<sys/socket.h>
+
+1350066240 /root/projects/Parvicursor/System.Net.Sockets/SocketFlags/SocketFlags.h
+	<mswsock.h>
+	<errno.h>
+	<sys/socket.h>
+
+1350066240 /root/projects/Parvicursor/System.Net.Sockets/SocketShutdown/SocketShutdown.h
+	<errno.h>
+	<sys/socket.h>
+
+1350066240 /root/projects/Parvicursor/System.Net/IPEndPoint/IPEndPoint.h
+	"../../System/ArgumentException/ArgumentOutOfRangeException.h"
+	"../../System.Net.Sockets/AddressFamily/AddressFamily.h"
+	"../IPAddress/IPAddress.h"
+
+1350066240 /root/projects/Parvicursor/System.Net/IPAddress/IPAddress.h
+	"../../System/NotSupportedException/NotSupportedException.h"
+	"../../System.Net.Sockets/AddressFamily/AddressFamily.h"
+
+1350066240 /root/projects/Parvicursor/System.IO/Directory/Directory.h
+	<stdio.h>
+	<fcntl.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<errno.h>
+	<stdlib.h>
+	"../../general.h"
+	"../../System/Object/Object.h"
+	"../IOException/IOException.h"
+	"../../System/ArgumentException/ArgumentException.h"
+	"../../System/ArgumentException/ArgumentNullException.h"
+	"../../System/ArgumentException/ArgumentOutOfRangeException.h"
+	"../../System/NotSupportedException/NotSupportedException.h"
+	"../../System/ObjectDisposedException/ObjectDisposedException.h"
+	"../../System.Collections/ArrayList/ArrayList.h"
+	"../../System/String/String.h"
+	"../DirectoryNotFoundException/DirectoryNotFoundException.h"
+	"../../StaticFunctions/StaticFunctions.h"
+	"../File/File.h"
+	<sys/io.h>
+	<sys/fcntl.h>
+	<unistd.h>
+	<sys/file.h>
+	<dirent.h>
+	<string.h>
+	<direct.h>
+	<io.h>
+	<share.h>
+	<sys/locking.h>
+	<stdio.h>
+	<malloc.h>
+	<tchar.h>
+	<wchar.h>
+	<strsafe.h>
+
+1350066240 /root/projects/Parvicursor/System.IO/DirectoryNotFoundException/DirectoryNotFoundException.h
+	"../../System/Exception/Exception.h"
+	"../../System/String/String.h"
+	"../IOException/IOException.h"
+
+1350066240 /root/projects/Parvicursor/System.IO/File/File.h
+	<stdio.h>
+	<fcntl.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<errno.h>
+	<stdlib.h>
+	"../../general.h"
+	"../../System/Object/Object.h"
+	"../IOException/IOException.h"
+	"../../System/ArgumentException/ArgumentException.h"
+	"../../System/ArgumentException/ArgumentNullException.h"
+	"../../System/ArgumentException/ArgumentOutOfRangeException.h"
+	"../../System/NotSupportedException/NotSupportedException.h"
+	"../../System/ObjectDisposedException/ObjectDisposedException.h"
+	"../../System/String/String.h"
+	"../DirectoryNotFoundException/DirectoryNotFoundException.h"
+	"../../StaticFunctions/StaticFunctions.h"
+	<sys/io.h>
+	<sys/fcntl.h>
+	<unistd.h>
+	<sys/file.h>
+	<io.h>
+	<share.h>
+	<sys/locking.h>
+
+1359145260 /root/projects/Parvicursor/Parvicursor/Profiler/ResourceProfiler.h
+	"../../general.h"
+	"../../StaticFunctions/StaticFunctions.h"
+	"../../System/BasicTypes/BasicTypes.h"
+	"../../System/Object/Object.h"
+	"../../System/Exception/Exception.h"
+	<time.h>
+	<math.h>
+	<stdlib.h>
+
+1350066180 source:/root/projects/FileCreator/stdafx.cpp
+	"stdafx.h"
+
