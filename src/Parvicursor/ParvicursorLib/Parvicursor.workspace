@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="ParvicursorLib workspace">
+		<Project filename="../xDFSServer_exe/xDFSServer_exe.cbp" />
+		<Project filename="../xDFSClient_test/xDFSClient_test.cbp" />
+		<Project filename="ParvicursorLib.cbp" />
+		<Project filename="../AsyncSocketLib/AsyncSocketLib.cbp" />
+	</Workspace>
+</CodeBlocks_workspace_file>
