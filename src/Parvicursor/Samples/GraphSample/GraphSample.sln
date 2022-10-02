@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GraphSample", "GraphSample.vcproj", "{A6D06110-BD2C-4417-B37E-DB1A861482E5}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ParvicursorLib", "..\..\ParvicursorLib\ParvicursorLib.vcproj", "{5AA9B888-33DE-4948-A2D0-8BC44A46AFC7}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{A6D06110-BD2C-4417-B37E-DB1A861482E5}.Debug.ActiveCfg = Debug|Win32
+		{A6D06110-BD2C-4417-B37E-DB1A861482E5}.Debug.Build.0 = Debug|Win32
+		{A6D06110-BD2C-4417-B37E-DB1A861482E5}.Release.ActiveCfg = Release|Win32
+		{A6D06110-BD2C-4417-B37E-DB1A861482E5}.Release.Build.0 = Release|Win32
+		{5AA9B888-33DE-4948-A2D0-8BC44A46AFC7}.Debug.ActiveCfg = Debug|Win32
+		{5AA9B888-33DE-4948-A2D0-8BC44A46AFC7}.Debug.Build.0 = Debug|Win32
+		{5AA9B888-33DE-4948-A2D0-8BC44A46AFC7}.Release.ActiveCfg = Release|Win32
+		{5AA9B888-33DE-4948-A2D0-8BC44A46AFC7}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,92 @@
+# depslib dependency file v1.0
+1653690534 source:/root/devel/book/Parvicursor/Samples/FileStream/FileStream.cpp
+	"../../Parvicursor/general.h"
+	"../../Parvicursor/System/BasicTypes/BasicTypes.h"
+	"../../Parvicursor/System.IO/FileStream/FileStream.h"
+	"../../Parvicursor/System/String/String.h"
+
+1653693264 /root/devel/book/Parvicursor/Parvicursor/general.h
+	<atlstr.h>
+	<windows.h>
+	<stdio.h>
+	<iostream>
+	<string>
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System/BasicTypes/BasicTypes.h
+	"../../general.h"
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System.IO/FileStream/FileStream.h
+	"../../System/Object/Object.h"
+	"../IOException/IOException.h"
+	"../../System/ArgumentException/ArgumentException.h"
+	"../../System/ArgumentException/ArgumentNullException.h"
+	"../../System/ArgumentException/ArgumentOutOfRangeException.h"
+	"../../System/NotSupportedException/NotSupportedException.h"
+	"../../System/ObjectDisposedException/ObjectDisposedException.h"
+	"../../System/BasicTypes/BasicTypes.h"
+	<stdio.h>
+	<fcntl.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<errno.h>
+	<stdlib.h>
+	<sys/io.h>
+	<sys/fcntl.h>
+	<unistd.h>
+	<sys/file.h>
+	<io.h>
+	<share.h>
+	<sys/locking.h>
+	<windows.h>
+	"../../System/Exception/Exception.h"
+	"../../System/String/String.h"
+	"../IOException/IOException.h"
+	"../../StaticFunctions/StaticFunctions.h"
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System/Object/Object.h
+	"../BasicTypes/BasicTypes.h"
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System.IO/IOException/IOException.h
+	"../../System/Exception/Exception.h"
+	"../../System/String/String.h"
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System/Exception/Exception.h
+	"../Object/Object.h"
+	"../String/String.h"
+	"../BasicTypes/BasicTypes.h"
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System/String/String.h
+	"../Object/Object.h"
+	"../BasicTypes/BasicTypes.h"
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System/ArgumentException/ArgumentException.h
+	"../Exception/Exception.h"
+	"../String/String.h"
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System/ArgumentException/ArgumentNullException.h
+	"../Exception/Exception.h"
+	"../String/String.h"
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System/ArgumentException/ArgumentOutOfRangeException.h
+	"../Exception/Exception.h"
+	"../String/String.h"
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System/NotSupportedException/NotSupportedException.h
+	"../Exception/Exception.h"
+	"../String/String.h"
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/System/ObjectDisposedException/ObjectDisposedException.h
+	"../Exception/Exception.h"
+	"../String/String.h"
+
+1653692647 /root/devel/book/Parvicursor/Parvicursor/StaticFunctions/StaticFunctions.h
+	"../general.h"
+	"../System/BasicTypes/BasicTypes.h"
+	"../System/String/String.h"
+	<malloc.h>
+	<stdlib.h>
+	<unistd.h>
+	< time.h >
+	<sys/time.h>
+	<sys/types.h>
+
