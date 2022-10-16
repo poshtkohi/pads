@@ -1,6 +1,6 @@
 # Implementing Parallel and Distributed Systems (PADS)
 
-This is a home page regarding the source codes for the book **Implementing Parallel and Distributed Systems** published by Taylor & Francis/CRC Press. <https://www.routledge.com/p/book/9781032151229>
+This is a home page regarding the source codes for the book **Implementing Parallel and Distributed Systems** published by Taylor & Francis/CRC Press. → <https://www.routledge.com/p/book/9781032151229>
 
 ![This is the book cover](/assets/images/book-cover.jpg)
 
