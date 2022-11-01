@@ -24,7 +24,7 @@ In order to take advantage of this environment, please take the following steps 
 
 After total downloads complete, please unzip the four parts through an appropriate ZIP software.
 
-**C)** Open the image, unzipped in step C, through VMware Workstation Player. Please use the following credential to log in to the Linux image:
+**C)** Open the image, unzipped in step B, through VMware Workstation Player. Please use the following credential to log in to the Linux image:
 
 **Username**: root **Password**: test12345
 
