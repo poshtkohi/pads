@@ -2,7 +2,7 @@
 
 This is a home page regarding the source codes for the book **Implementing Parallel and Distributed Systems** published by Taylor & Francis/CRC Press. → <https://routledge.com/p/book/9781032151229>
 
-![This is the book cover](/assets/images/book-cover.jpg)
+![This is the book cover](/assets/images/book-cover.png)
 
 ## 1. A Linux Image for VMware
 
