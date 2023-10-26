@@ -6,7 +6,7 @@ This is a home page regarding the source codes for the book **Implementing Paral
 
 ## 1. A Linux Image for VMware
 
-The authors provide a Linux’s VMware image which accompanies the source codes for all the chapters of the book. Of course, the reader could compile and prepare all the necessary stuff as described in the book by themselves. However, the image includes all the pre-installed tools and libraries, as well as Code::Block IDE, that the readers need to easily build and develop applications for Parvicrursor Platform (Chapters 1 to 10) and MPI-based Supercomputing (Chapter 11). 
+The authors provide a Linux VMware image which accompanies the source codes for all the chapters of the book. Of course, the reader could compile and prepare all the necessary stuff as described in the book by themselves. However, the image includes all the pre-installed tools and libraries, as well as Code::Block IDE, that the readers need to easily build and develop applications for Parvicrursor Platform (Chapters 1 to 10) and MPI-based Supercomputing (Chapter 11). 
 
 In order to take advantage of this environment, please take the following steps carefully.
 
@@ -22,13 +22,13 @@ In order to take advantage of this environment, please take the following steps 
 
 [Download Part 4](https://drive.google.com/uc?export=download&id=1c02grYEFd0ICGy_7gcMXICCidcQVST4s)
 
-After total downloads complete, please unzip the four parts through an appropriate ZIP software.
+After total downloads are complete, please unzip the four parts through an appropriate ZIP software.
 
-**C)** Open the image, unzipped in step B, through VMware Workstation Player. Please use the following credential to log in to the Linux image:
+**C)** Open the image, unzipped in step B, through VMware Workstation Player. Please use the following credentials to log in to the Linux image:
 
 **Username**: root **Password**: test12345
 
-**D)** Refer to your Linux image's desktop and open Code::Blocks. Subsequently, you should come along the picture below:
+**D)** Refer to your Linux image's desktop and open Code::Blocks. Subsequently, you should come along with the picture below:
 
 ![This is an image for Parvicursor development environment](/assets/images/codeblocks.png)
 
@@ -36,7 +36,7 @@ As seen there are two workspaces in Code::Blocks that have all the code examples
 
 ## 2. A Distribution Package for Microsoft Visual Studio on Windows Family of Operating Systems
 
-We will shortly release a ZIP package that the readers can open it via Visual Studio for rapid Windows-based development. Additionally, all Visual Studio's project files are included with the book's source codes that one can make use of them for importing into the latest version of their Visual Studio installation (of course, Crypto++ library must be manually installed in advance).
+We will shortly release a ZIP package that the readers can open via Visual Studio for rapid Windows-based development. Additionally, all Visual Studio's project files are included with the book's source codes that one can make use of them for importing into the latest version of their Visual Studio installation (of course, Crypto++ library must be manually installed in advance).
 
 ## 3. Questions and Support
 
@@ -44,5 +44,5 @@ If the respected readers have any questions about the Linux image or Windows pac
 
 ![Author's email address](/assets/images/email-new.png)
 
-The authors would be delighted to get back to you as quick as possible.
+The authors would be delighted to get back to you as quickly as possible.
 
