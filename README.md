@@ -42,7 +42,7 @@ We will shortly release a ZIP package that the readers can open via Visual Studi
 
 If the respected readers have any questions about the Linux image or Windows package, please get in touch with the authors via the email address below
 
-![Author's email address](/assets/images/email-new.png)
+![Author's email address](/assets/images/email-new.jpg)
 
 The authors would be delighted to get back to you as quickly as possible.
 
